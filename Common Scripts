@@ -8,3 +8,18 @@ iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth0 -j MASQUERADE
 
 #Streaming video
 raspivid -t 0 -w 1280 -h 720 -fps 25 -b 1000000 -pf baseline -vf -hf -o - | nc -u 192.168.99.2 6000
+
+Windows batch script:
+
+@echo off
+cd C:\gstreamer\1.0\x86_64\bin
+gst-launch-1.0 -e -v udpsrc port=5000 ! application/x-rtp, payload=96 !        
+rtpjitterbuffer ! rtph264depay ! avdec_h264 ! fpsdisplaysink sync=false    
+text-overlay=false
+Raspberry Pi Bash Script:
+
+#!/bin/bash
+clear
+raspivid -n -t 0 -rot 270 -w 960 -h 720 -fps 30 -b 6000000 -o - | gst-       
+launch-1.0 -e -vvvv fdsrc ! h264parse ! rtph264pay pt=96 config-interval=5 !   
+udpsink host=***YOUR_PC_IP*** port=5000
