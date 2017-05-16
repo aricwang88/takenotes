@@ -23,3 +23,21 @@ clear
 raspivid -n -t 0 -rot 270 -w 960 -h 720 -fps 30 -b 6000000 -o - | gst-       
 launch-1.0 -e -vvvv fdsrc ! h264parse ! rtph264pay pt=96 config-interval=5 !   
 udpsink host=***YOUR_PC_IP*** port=5000
+
+
+#PTY demo code.
+
+import os, pty, serial
+
+master, slave = pty.openpty()
+s_name = os.ttyname(slave)
+
+ser = serial.Serial(s_name)
+
+# To Write to the device
+ser.write('Your text')
+
+# To read from the device
+os.read(master,1000)
+
+
