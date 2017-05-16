@@ -1,0 +1,10 @@
+#Common Scripts
+
+#PPPOE SERVER
+>pppoe-server -C isp -L 192.168.111.1 -R 192.168.111.2-254 -I eth0
+
+#NAT
+iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o eth0 -j MASQUERADE
+
+#Streaming video
+raspivid -t 0 -w 1280 -h 720 -fps 25 -b 1000000 -pf baseline -vf -hf -o - | nc -u 192.168.99.2 6000
