@@ -27,3 +27,5 @@ trace:activate(["pdp_restoration_apn","pdp_deactivation_controller_main","ssuses
  
 
 
+#Check S1 parameters
+>gsh get_s1_mme -s1 s1  
