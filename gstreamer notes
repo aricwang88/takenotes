@@ -20,3 +20,11 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! \
     filesink location=FIRST.mp4
 
 
+
+gst-launch-1.0.exe ksvideosrc ! autovideosink
+
+git clone https://github.com/mpromonet/h264_v4l2_rtspserver.git 
+ 
+gst-launch-1.0.exe rtspsrc location=rtsp://192.168.16.62:8555/unicast latency=10 ! decodebin ! autovideosink
+
+ffmpeg -i rtsp://xxx -f sdl -
