@@ -1,0 +1,22 @@
+#GStreamer
+gst-launch-1.0 -v videotestsrc pattern=snow ! video/x-raw,width=1280,height=720 ! autovideosink
+
+gst-launch-1.0 -v videotestsrc pattern=snow ! video/x-raw,width=1280,height=720 ! autovideosink
+
+gst-launch-1.0 -e -vvvv fdsrc ! h264parse ! rtph264pay pt=96 config-interval=5 ! udpsink host=127.0.0.1 port=5000
+
+gst-launch-1.0 -e -vvvv videotestsrc ! h264parse ! rtph264pay pt=96 config-interval=5 ! udpsink host=127.0.0.1 port=5000
+
+gst-launch-1.0 v4l2src device=/dev/video0 ! \
+    video/x-raw,format=YV12,width=960,height=544,framerate=30/1 ! \
+    tee name=t ! \
+    queue ! \
+    autovideosink sync=false t. ! \
+    videorate ! \
+    queue ! \
+    vaapiencode_h264 keyframe_period=5 tune=high-compression min-qp=50 ! \
+    queue ! \
+    mpegtsmux ! \
+    filesink location=FIRST.mp4
+
+
