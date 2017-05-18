@@ -1,0 +1,32 @@
+1)	Make a brand new Install of Raspbian and do all upgrade/ update, etc.
+
+2)	Install V4L2 Driver
+
+•	sudo apt-get install v4l-utils
+•	sudo modprobe bcm2835-v4l2
+
+If this works, you should be able to do:
+•	v4l2-ctl -V
+
+Which gets the current video format.
+The modprobe above will only create the device this time around. To make it permanent, you have to edit /etc/modules:
+• sudo vi /etc/modules
+add a line:
+•	bcm2835-v4l2
+
+3) RTSP server: https://github.com/mpromonet/h264_v4l2_rtspserver
+
+Get the code and build it.
+•	sudo git clone https://github.com/mpromonet/h264_v4l2_rtspserver.git 
+•	sudo apt-get install liblivemedia-dev libv4l-dev cmake 
+•	cd h264_v4l2_rtspserver 
+•	sudo cmake . 
+•	sudo make
+
+Run your server like this:
+•	cd ~/ sudo h264_v4l2_rtspserver/h264_v4l2_rtspserver -F 25 -W 1280 -H 720 -P 8555 /dev/video0
+
+Note the parameters to set the width and height and framerate also the port which i've set here to 8555.
+To try it out, run up VLC on another machine and enter the network URL
+
+•	rtsp://ip-address-of-your-rPI:8555/unicast
