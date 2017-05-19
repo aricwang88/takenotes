@@ -4,9 +4,9 @@
 
 auto eth0
 iface eth0 inet static
-        address 10.1.1.30
-        netmask 255.255.255.0
-        gateway 10.1.1.1
+        address 150.236.227.59
+        netmask 150.236.227.127
+        gateway 150.236.227.1
         
 allow-hotplug wlan0
 iface wlan0 inet static
