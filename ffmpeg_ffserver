@@ -1,0 +1,44 @@
+1, libav-tools 
+有avconv avplay avserver ...         貌似非常不稳定，经常core dump!!
+
+2,Download ffmpeg source code and compile.
+Download:
+ http://www.ffmpeg.org/download.html
+ Unpack, configure && make && make install
+
+3, Edit ffserver.conf
+Add RTSP port to it.
+After HTTPPort.
+RTSPPort 5554
+
+4, Test for local fie.
+
+<Stream min4.mp4>
+Format rtp
+File "/home/ehhewng/MIN4.mp4"
+#NoAudio
+</Stream>
+
+Using:
+rtsp://xx.xx.xx.xx:5554/min4.mp4
+5, Feed resource.
+Linux:
+avconv -f video4linux2 -r 25 -i /dev/video0 -f rtp rtp://127.0.0.1:5555
+
+ffmpeg -i MIN4.mp4 http://localhost:8090/feed1.ffm
+
+ffmpeg -f video4linux2 -r 25 -i /dev/video0 http://localhost:8090/feed2.ffm
+
+Windows:
+ffmpeg.exe -list_devices true -f dshow -i dummy
+
+ ffmpeg.exe -i C:\Users\ehhewng\Desktop\MTV\4MIN.mp4 http://146.11.22.237:8090/feed2.ffm
+ 
+ffmpeg.exe -f dshow -i video="HP HD Webcam" http://146.11.22.237:8090/feed2.ffm
+
+发送RTP实时流
+>ffmpeg.exe -f dshow -framerate 24 -s 640x480 -i video="HP HD Webcam" -b:v 100k  -vcodec h264 -f rtp rtp://146.11.22.114:8888 > ../rtp.sdp
+播放RTP实时流
+>avplay ../rtp.sdp -fflags nobuffer -vcodec h264
+>
+ 
