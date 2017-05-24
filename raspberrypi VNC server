@@ -1,0 +1,27 @@
+安装
+apt-get install tightvncserver tightvnc-java
+
+启动
+vncserver -name vnc_raspi -depth 24 -geometry 800x600 -httpport 9001 :1
+-name vnc_raspi 桌面名字，这个参数非必要
+-depth 24 使用24位颜色，这里一般用16或者24
+-geometry 800x600 桌面分辨率,根据要求调整
+-httpport 9001 使用浏览器连接的端口，多个用户开vnc server，每个用户要使用不同的端口
+:1 会话数字编号
+
+第一次运行会要求输入一个密码，这个密码和你的ssh登录密码是分开的(至少6字节)
+vncpasswd
+raspberry
+
+关闭
+vncserver -kill :1
+:1 是会话数字，和启动的会话数字一致
+
+连接
+客户端
+xvncviewer    192.168.137.13:1
+xvncviewer    192.168.137.13:5901
+(apt-get install vinagre)
+
+浏览器(需要java插件)
+http://192.168.137.13:9001
