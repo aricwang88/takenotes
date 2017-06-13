@@ -42,3 +42,10 @@ ffmpeg.exe -f dshow -i video="HP HD Webcam" http://146.11.22.237:8090/feed2.ffm
 >avplay ../rtp.sdp -fflags nobuffer -vcodec h264
 >
  
+
+Office PC test:
+ffmpeg.exe -f dshow -framerate 24 -s 640x480 -i video="HP HD Webcam" -b:v 1000k -vcodec h264 -f rtp rtp://127.0.0.1:8888 > ../rtp.sdp
+
+ffplay.exe  -protocol_whitelist "file,http,https,tcp,udp,rtp"  ../rtp.sdp
+
+
