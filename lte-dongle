@@ -54,5 +54,33 @@ connect '/usr/sbin/chat -s -v -f /etc/ppp/lte-chat'
 
 
 
+3, usb-modeswtich
+
+usb_modeswitch存在于一些发行版（如Archlinux）的软件仓库中，也可以从其网站上直接下载：
+
+http://www.draisberghof.de/usb_modeswitch/ 
+
+上面这个网站很重要，说三遍！
+
+ 
+
+ 
+
+然后将无线上网卡插入电脑的U口，调用lsusb命令查一下当前设备，大概类似这样
+
+Bus 002 Device 043: ID 12d1:1f01 Huawei Technologies Co., Ltd.
+
+ 
+
+然后在/lib/udev/rules.d/40-usb_modeswitch.rules中倒数第二行加入
+
+# Huawei
+ATTR{idVendor}=="12d1", ATTR{idProduct}=="1f01", RUN+="usb_modeswitch '%b/%k'"
+
+ 
+
+然后无线上网卡即可被识别出来，Network Manager会出现一个‘自动以太网’的选项，点击即可连上上网卡了。
+
+然后在浏览器里输入 192.168.1.1，打开配置页面，点击链接即可上网。这一步跟windows系统下一样，就不废话了。
 
 
