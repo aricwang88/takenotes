@@ -1,0 +1,97 @@
+ 1497  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@127.0.0.1 -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1498  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@localhost -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1501  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@localhost -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1505  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@localhost -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1508  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh root@localhost -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1509  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@localhost -o Batchmode=yes  sudo /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1510  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh root@localhost -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1511  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@localhost -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1513  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@localhost -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+ 1692  pppd nodetach notty noauth ms-dns 8.8.8.8 | nc -u 192.168.200.1 6000
+ 1698  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/1
+ 1699  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/0
+ 1701  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/26
+ 1703  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/27
+ 1705  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/25
+ 1707  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/1
+ 1709  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/26
+ 1710  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/1
+ 1715  pppd updetach noauth ms-dns 8.8.8.8 notty | nc -u 192.168.16.62 6000
+ 1716  pppd updetach noauth ms-dns 8.8.8.8 notty | nc -C -u 192.168.16.62 6000
+ 1719  pppd updetach noauth ms-dns 8.8.8.8 pty /dev/pts/25
+ 1720  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/25
+ 1725  pppd updetach noauth ms-dns 8.8.8.8 tty /dev/pts/25
+ 1757  pppd noipdefault nodetach noauth pty "nc 192.168.16.62 3333"
+ 1758  pkill -9 pppd
+ 1765  pppd noipdefault nodetach noauth pty "python test_stdio_stdout.py"
+ 1767  pppd noipdefault nodetach noauth pty "python test_stdio_stdout.py"
+ 1768  pppd noipdefault nodetach noauth pty "python ./test_stdio_stdout.py"
+ 1769  pppd noipdefault nodetach noauth pty "python test_stdio_stdout.py"
+ 1770  pppd noipdefault nodetach noauth pty "/usr/bin/python test_stdio_stdout.py"
+ 1774  pppd noipdefault nodetach noauth pty "/usr/bin/python test_stdio_stdout.py"
+ 1775  pppd noipdefault nodetach noauth pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1777  pppd noipdefault nodetach noauth pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1778  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1781  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1783  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1787  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1789  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1791  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1793  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1796  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1798  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1800  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1802  pppd noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1803  pppd -d noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/test_stdio_stdout.py"
+ 1804  pppd -d noipdefault nodetach noauth pty "nc 192.168.16.62 3333"
+ 1811  pppd -d noipdefault nodetach noauth passive pty "/usr/bin/python /home/aric/py_udp_server.py"
+ 1814  pppd -d noipdefault nodetach noauth passive pty "/home/aric/py_udp_server.py"
+ 1816  pppd -d noipdefault nodetach noauth passive pty "/home/aric/py_udp_server.py"
+ 1818  pppd -d noipdefault nodetach noauth passive pty "/home/aric/py_udp_server.py"
+ 1821  pppd -d noipdefault nodetach noauth passive pty "/home/aric/py_udp_server.py"
+ 1824  pppd -d noipdefault nodetach noauth passive pty "/home/aric/py_udp_server.py"
+ 1825  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1826  man pppd
+ 1828  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1830  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1833  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1835  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1837  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1839  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1841  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1843  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1845  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1847  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1849  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1851  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1853  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1854  pppd -d noipdefault nodetach noauth pty "nc 192.168.16.62 3333"
+ 1856  pppd -d noipdefault nodetach noauth pty "nc 192.168.16.62 3333"
+ 1857  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1859  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1861  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1863  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1868  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1870  pppd -d noipdefault nodetach noauth pty "/home/aric/py_udp_server.py"
+ 1871  pppd -d noipdefault nodetach noauth passive pty "/home/aric/py_udp_server.py"
+ 1873  pppd -d noipdefault nodetach noauth passive pty "/home/aric/py_udp_server.py"
+ 1875  pppd -d noipdefault nodetach noauth passive pty "/home/aric/py_udp_server.py"
+ 1897  history | grep pppd
+ 1898  pppd -d noipde
+ 1899  pppd -d noipdefault nodetach noauth tty /dev/ttyUSB0
+ 1900  history | grep pppd
+ 1901  pppd -d noipdefault nodetach noauth tty /dev/ttyUSB0
+ 1902  pkill -9 pppd
+ 1903  pppd -d noipdefault nodetach noauth tty /dev/ttyUSB0
+ 1904  pkill -9 pppd
+ 1905  history | grep pppd
+ 1906  pppd -d noipdefault nodetach noauth pty "nc 192.168.16.62 3333"
+ 1907  pppd -d noipdefault nodetach noauth modem lock /dev/ttyUSB0 
+ 1908  pkill -9 pppd
+ 1909  pppd -d noipdefault nodetach noauth modem lock /dev/ttyUSB0 115200
+ 1916  pppd -d noipdefault nodetach noauth modem lock /dev/ttyUSB0 115200
+ 1918  pppd modem -d detach lock /dev/ttyUSB0 115200 file /etc/ppp/options crtscts noipdefault netmask 255.255.255.0 defaultroute
+ 1919  pppd modem -d updetach lock /dev/ttyUSB0 115200 file /etc/ppp/options crtscts noipdefault netmask 255.255.255.0 defaultroute
+ 1922  pppd modem /dev/ttyUSB0 115200 nocrtscts lock connect "" user "" noauth debug defaultroute
+ 1932  pppd modem /dev/ttyUSB0 115200 nocrtscts lock connect "" user "" noauth debug defaultroute
+ 1940  pppd modem /dev/ttyUSB0 115200 nocrtscts lock connect ""  noauth debug defaultroute
