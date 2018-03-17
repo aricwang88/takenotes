@@ -95,3 +95,76 @@
  1922  pppd modem /dev/ttyUSB0 115200 nocrtscts lock connect "" user "" noauth debug defaultroute
  1932  pppd modem /dev/ttyUSB0 115200 nocrtscts lock connect "" user "" noauth debug defaultroute
  1940  pppd modem /dev/ttyUSB0 115200 nocrtscts lock connect ""  noauth debug defaultroute
+
+
+
+
+PI:
+  186  pppd updetach defaultroute replacedefaultroute usepeerdns passive pty "ssh aric@192.168.16.193 -o Batchmode=yes /usr/sbin/pppd nodetach notty no auth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  187  pppd updetach defaultroute replacedefaultroute usepeerdns passive pty "ssh aric@192.168.16.193 -o Batchmode=yes /usr/sbin/pppd nodetach notty no auth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  189  pppd updetach defaultroute replacedefaultroute usepeerdns passive pty "ssh aric@192.168.16.193 -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  190  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@192.168.16.193 -o Batchmode=yes /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  191  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@192.168.16.193 -o Batchmode=yes sudo /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  192  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@192.168.16.193 -o Batchmode=yes  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  193  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@192.168.16.193 -o Batchmode=yes  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  194  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@192.168.16.193 -o Batchmode=yes  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  195  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@192.168.16.193 -o Batchmode=yes  'sudo /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8'" 10.0.0.2:10.0.0.3
+  196  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@192.168.16.193 -o Batchmode=yes  'sudo /usr/sbin/pppd nodetach notty noauth' ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  197  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh aric@192.168.16.193 -o Batchmode=yes  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  198  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "nc -l 6000  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  199  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "nc -l 6000  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  200  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "/usr/sbin/nc -l 6000  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  202  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "/bin/nc -l 6000  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  204  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh root@192.168.16.193 -o Batchmode=yes  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  209  ps -ef | grep pppd
+  210  pkill -9 pppd
+  213  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh root@192.168.16.193 -o Batchmode=yes  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  214  pkill -9 pppd
+  216  ps -ef | grep pppd
+  217  pppd nodetach defaultroute replacedefaultroute usepeerdns noauth passive pty "ssh root@192.168.16.193 -o Batchmode=yes  /usr/sbin/pppd nodetach notty noauth ms-dns 8.8.8.8" 10.0.0.2:10.0.0.3
+  273  pppd nodetach defaultroute replacedefaultroute usepeerdns noauth passive notty nc -u -l 6000 
+  274  pppd nodetach defaultroute replacedefaultroute usepeerdns noauth passive notty " nc -u -l 6000 "
+  275  pppd nodetach defaultroute replacedefaultroute usepeerdns noauth passive | nc -u -l 6000
+  283  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive tty /dev/pts/2 
+  284  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive tty /dev/pts/2 
+  286  pppd updetach defaultroute replacedefaultroute usepeerdns noauth passive tty /dev/pts/3 
+  288  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  289  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  293  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "python udp_client.py"
+  297  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "python udp_client.py"
+  299  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "python udp_client.py"
+  301  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "python udp_client.py"
+  302  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "python udp_client.py"
+  303  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "python udp_client.py"
+  305  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "python udp_client.py"
+  308  pppd 10.0.0.2:10.0.0.3 updetach noauth pty "python udp_client.py"
+  376  history | grep pppd
+  377  pppd 10.0.0.2:10.0.0.3 updetach noauth tty /dev/ttyAMA0
+  378   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  379   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  380   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  381   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  382   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  383   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  384   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  385   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  386   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  388  pkill -9 pppd
+  389   pppd 10.0.0.2:10.0.0.3 updetach noauth pty "nc -l 3333"
+  394  history | grep pppd
+  395  pppd modem -d lock /dev/ttyAMA0 115200 updetach noauth 
+  396  pppd modem -d lock /dev/ttyAMA0 115200 updetach noauth  10.0.0.2：10.0.0.3
+  397  pppd modem -d lock /dev/ttyAMA0 115200 updetach noaut
+  398  pppd modem -d lock /dev/ttyAMA0 115200 updetach noauth 
+  406  history | grep pppd
+  407  pppd -d modem lock /dev/ttyAMA0 115200 updetaqch noauth
+  408  pppd -d  lock /dev/ttyAMA0 115200 updetaqch noauth
+  409  pppd -d  lock /dev/ttyAMA0 115200 updetach noauth
+  410  pppd -d modem lock /dev/ttyAMA0 115200 updetach noauth
+  412  pppd -d modem lock /dev/ttyAMA0 115200 updetach noauth passive
+  413  pppd modem -d lock /dev/ttyAMA0 115200 file /etc/ppp/options crtscts updetach noauth passive
+  415  pppd modem /dev/ttyAMA0 115200 nocrtscts lock connect "" noauth debug defaultroute 10.0.0.2:10.0.0.3
+  423  pppd modem /dev/ttyAMA0 115200 nocrtscts lock connect "" noauth debug defaultroute 10.0.0.2:10.0.0.3
+  433  pppd modem /dev/ttyAMA0 115200 nocrtscts lock connect "" noauth debug defaultroute 10.0.0.2:10.0.0.3
+  439  pppd modem /dev/ttyAMA0 115200 nocrtscts lock connect "" noauth debug defaultroute 10.0.0.2:10.0.0.3
+  
