@@ -1,0 +1,58 @@
+1,wvdial  conf
+
+[Dialer Defaults]
+Init1 = ATZ
+#Init2 = ATQ0 V1 E1 S0=0 &C1 &D2 +FCLASS=0
+Init3 = ATE0V1
+Init5 = ATS0=0
+Init6 = AT+CGDCONT=1,"IP","cmnet"
+Init7 = AT+CFUN=1
+Modem Type = Analog Modem
+Baud = 115200 
+New PPPD = yes
+Modem = /dev/ttyUSB2
+ISDN = 0
+#Phone=*99***1#
+Phone=*99#
+Password= any
+Username= any
+Stupid Mode = 1
+
+
+
+2, pppd dial china moblie
+#cat lte-chat 
+
+TIMEOUT	5
+ABORT	"DELAYED"
+ABORT	"BUSY"
+ABORT	"ERROR"
+ABORT	"NO DIALTONE"
+ABORT	"NO CARRIER"
+''	AT
+#'OK-+++\c-OK ATH0
+TIMEOUT	5
+''	AT
+OK	AT+CGDCONT=1,"ip","cmnet",,0,0
+#OK	ATDT*99***1#
+OK	ATDT*99#
+CONNECT	''
+
+#cat peers/lte-cmnet 
+#This is a pppd script, used by LTE-dongle
+/dev/ttyUSB0
+4608000
+crtscts
+modem
+debug
+nodetach
+usepeerdns
+defaultroute
+user "cmnet"
+0.0.0.0:0.0.0.0
+connect '/usr/sbin/chat -s -v -f /etc/ppp/lte-chat'
+
+
+
+
+
