@@ -1,1 +1,9 @@
 #SDR With HackRF One Replay Lesson11
+
+Check IQ file.
+xxd car | less
+
+od -f -w4 car | less
+
+
+
