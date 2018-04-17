@@ -1,3 +1,9 @@
      方法1: "wget -q http://drbl.nchc.org.tw/GPG-KEY-DRBL -O- | sudo apt-key add -" 。 
 
     方法2: 或是由key server下載，KeyID是D7E8DF3A，可以這樣執行"gpg --keyserver subkeys.pgp.net --recv-key D7E8DF3A"，然後再執行"gpg -a --export D7E8DF3A | apt-key add -". 
+
+
+
+sudo apt-key adv --recv-keys --keyserver keyserver.Ubuntu.com 40976EAF437D05B5
+sudo apt-key adv --recv-keys --keyserver keyserver.Ubuntu.com 3B4FE6ACC0B21F32
+
