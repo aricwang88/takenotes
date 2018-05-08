@@ -1,0 +1,109 @@
+LTE SIM Configuration
+
+Table of Contents
+
+    LTE/WiMAX
+        LTE Infrastructure
+            OpenAirInterface
+            Amarisoft
+            Airspan
+            LTE SIM Configuration
+        WiMAX Infrastructure
+            NEC
+            Airspan
+
+SIM Card Setting Intro
+
+    International Mobile Subscriber Identity (IMSI): 15 digit unique identifying number that is used to identify the subscriber to the service. Typically issued by the operator. IMSI consists of:
+        MCC: Mobile Country Code - identifies geographic region of the SIM card
+        MNC: Mobile Network Code - identifies the operator
+        MSIN: Mobile Subscriber Identifier - identifies individual subscriber 
+
+    Typically ​MCC and MNC are 5, 6 or 7 digit combination leaving 10, 9 or 8 digits for the subscriber serial number.
+
+    Authentication Algorithm: A number of ​standard security algorithms are sued in cellular networks. The two that are related to SIM configuration are:
+        XOR - Mostly used for testing
+        ​Mileanage - Mostly used in production. Parameters stored in SIm realated to authentication are:
+            Ki: Subscriber Authentication Key (128 bit)
+            OP: Operator Code - same for all SIMs from a single operator
+            OPc: ​Derived operator code unique for each SIM 
+
+    These keys ​should be validated before deployment.
+
+    Integrated Circuit Card Identifier (ICCID): ​up to 22-digit number uniquely identifying the SIM card. Consist of:
+        Issuer identification number (IIN): Up to 7 digits with
+            Major Industry Identifier (2 digit): Hard-coded to "89" identifying telecommunication
+            Country code (1-3 digit): SIM Issuer Country Code
+            Issuer Identifier (1-4 digit): SIM Issuer (operator) Code 
+        Valid IINs are published in ​the Annex of the ITU Operational Bulletin.
+        Individual Account Identifier (variable length):
+        Checksum (1 digit) : One digit ​Luhn algorithm check code. 
+
+    Answer To Reset (ATR): Information message that helps reader access the card information (i.e. describes ​how to read the SIM card). 
+
+NOTE: International Mobile Equipment Identity (IMEI) is not related to SIM but is rather a unique identifier of the device.
+ORBIT Configuration
+
+    SIM cards used are Sysmocom sysmoUSIM-SJS1 (orange)
+    We follow the instructions at: ​https://sourceforge.net/p/openlte/wiki/Programming%20you%20own%20USIM%20card/
+    To avoid DAMAGE to your cards, you must have purchased the ADM keys with them. Follow the instructions regarding ADM keys precisely to avoid ruining your cards! 
+
+Installation requirements 04/26/17
+
+    Install card reader software under linux, (master branch now works)
+        sudo apt-get install pcscd pcsc-tools libpcsclite1 libpcsclite-dev python-pip swig
+        pip install pyscard
+        git clone git://git.osmocom.org/pysim pysim
+        Run sudo pcsc_scan to verify that the reader detects the card
+        You should see at the bottom the text
+
+        3B 9F 96 80 1F C7 80 31 A0 73 BE 21 13 67 43 20 07 18 00 00 01 A5
+        	sysmoUSIM-SJS1 (Telecommunication)
+        	http://www.sysmocom.de/products/sysmousim-sjs1-sim-usim
+
+Select SIM parameters
+
+    Choose SIM Parameters (Based on ​https://gitlab.eurecom.fr/oai/openairinterface5g/wikis/SimCardConfig)
+        For OAI and Amarisoft, we use the following:
+            Algorithm = Milenage
+            MCC = 001 (Test Country)
+            MNC = 01 (Test Network)
+            Ki = 8BAF473F2F8FD09487CCCBD7097C6862
+            OP = 11111111111111111111111111111111
+            or OPc = 8BAF473F2F8FD09487CCCBD7097C6862 (can be used instead of OP)
+            ID = 000000000001 (Increment for each sim to make unique)
+            IMSI = (MCC|MNC|ID) 
+    Program Cards DO NOT PROCEED WITHOUT CORRECT ADM KEYS
+        We use the following flags from PySIM
+            -p = pcsc card reader index, get from pcsc_scan. Is 0 in our case.
+            -t = card type, our case is sysmoUSIM-SJS1
+            -x = MCC
+            -y = MNC
+            -j = ID number, increment as needed
+            --op = set OP, OPc is generated automatically by use of K and OP. For security you could increment both imsi and K to keep OPc hidden between clients
+            -a = ADM key. VERY IMPORTANT. These SIM cards must be purchased with ADM unlock keys. They are specific to each individual card. Attempting to program the card without / with an invalid key / the wrong version of pysim can BRICK your card, rendering it useless!!!
+            If pysim exits with a return code like RuntimeError: SW match failed ! Expected 9000 and got 6983. Then you got the ADM wrong, or used the wrong branch. Specific meanings are ​here
+                63C3 Verify fail, 3 tries left.
+                63C2 Verify fail, 2 tries left.
+                63C1 Verify fail, 1 tries left.
+                63C0 Verify fail, 0 tries left.
+                6389 Key length is not correct.
+                6388 Key number not valid.
+                6983 Authentication method blocked 
+
+Program SIM Cards =
+
+    Our cards were programmed with the following commands
+        ./pySim-prog.py -p 0 -x 001 -y 01 -t sysmoUSIM-SJS1 -j 1 --op=11111111111111111111111111111111 -k 8BAF473F2F8FD09487CCCBD7097C6862 -a 75659958
+        ./pySim-prog.py -p 0 -x 001 -y 01 -t sysmoUSIM-SJS1 -j 2 --op=11111111111111111111111111111111 -k 8BAF473F2F8FD09487CCCBD7097C6862 -a 21126642 
+    This results in SIMs having the following parameters
+        SIM 1 (In dongle attached to node1-2.sb1)
+            ICCID : 8901001010000000017
+            IMSI : 001010000000001
+            Ki : 8BAF473F2F8FD09487CCCBD7097C6862
+            OPC : 8e27b6af0e692e750f32667a3b14605d 
+        SIM 2 (In dongle attached to node2-5.outdoor)
+            ICCID : 8901001010000000025
+            IMSI : 001010000000002
+            Ki : 8BAF473F2F8FD09487CCCBD7097C6862
+            OPC : 8e27b6af0e692e750f32667a3b14605d 
