@@ -1,0 +1,875 @@
+
+
+03:37:19.243104 [PHY0] [I] [00000] Worker 0 configured cell 25 PRB
+03:37:19.413353 [PHY1] [I] [00000] Worker 0 configured cell 25 PRB
+03:37:19.438043 [MAC ] [I] [00000] Resetting MAC
+03:37:19.458461 [S1AP] [I] Connecting to MME 127.0.1.100:36412
+03:37:19.458817 [S1AP] [I] SCTP socket established with MME
+03:37:19.459219 [S1AP] [I] Sending s1SetupRequest
+             0000: 00 11 00 2d 00 00 04 00 3b 00 08 00 42 f4 99 00 
+             0010: 00 19 b0 00 3c 40 0a 03 80 73 72 73 65 6e 62 30 
+03:37:19.459956 [S1AP] [I] Received S1AP PDU
+             0000: 20 11 00 25 00 00 03 00 3d 40 0a 03 80 73 72 73 
+             0010: 6d 6d 65 30 31 00 69 00 0b 00 00 42 f4 99 00 00 
+03:37:19.460029 [S1AP] [I] Received S1SetupResponse
+03:37:19.853572 [PHY0] [I] [00000] Starting RX/TX thread nof_prb=25, sf_len=5760
+03:37:21.365774 [PHY0] [W] [00011] PRACH thread did not finish processing TTI=1
+03:37:36.355558 [PHY0] [I] [04760] PRACH: 0/2, preamble=47, offset=0.0 us, peak2avg=680.6, max_offset=30.0 us
+03:37:36.360942 [MAC ] [I] [04761] SCHED: Added user rnti=0x46
+03:37:36.361035 [MAC ] [I] [04761] SCHED: Set bearer config lc_id=0, direction=3
+03:37:36.361238 [RRC ] [I] Added new user rnti=0x46
+03:37:36.361260 [MAC ] [I] [04761] RACH:  tti=4761, preamble=47, offset=0, temp_crnti=0x46
+03:37:36.361322 [PHY0] [I] [04760] PRACH: 1/2, preamble=48, offset=87.7 us, peak2avg=74.6, max_offset=30.0 us
+03:37:36.361891 [MAC ] [I] [04766] SCHED: RAR, ra_id=0, rnti=0x46, rarnti_idx=2, start_rb=0, n_rb=3, rar_grant_rba=52, rar_grant_mcs=0
+03:37:36.362026 [PHY0] [I] [04762] PDCCH: DL DCI Format1A rnti=0x2, cce_index=4, L=4, tti_tx_dl=4766
+03:37:36.362068 [PHY0] [I] [04762] PDSCH: rnti=0x2, l_crb= 3, rb_start=0, harq=0, tti_tx_dl=4766, tx_scheme=Diversity, TB0: tbs=7, mcs=0, rv=0
+             0000: 6f 00 00 68 0c 00 46 
+03:37:36.362791 [MAC ] [I] [04772] SCHED: RAR tx rnti=0x46, pid=4, dci=0,0, grant=(2,5), n_rtx=0, tbs=7, bsr=0 (0-7)
+03:37:36.366396 [PHY0] [I] [04772] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=-0.2 dB, n_iter=4, crc=KO, dec_time= 116 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.366506 [MAC ] [I] [04780] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=1, tbs=7, bsr=0 (0-7)
+03:37:36.366602 [PHY0] [I] [04772] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4776
+03:37:36.366642 [PHY0] [I] [04772] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4776
+03:37:36.374170 [PHY0] [I] [04780] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=2, snr=0.7 dB, n_iter=4, crc=KO, dec_time=  87 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.374263 [MAC ] [I] [04788] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=2, tbs=7, bsr=0 (0-7)
+03:37:36.374363 [PHY0] [I] [04780] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4784
+03:37:36.374450 [PHY0] [I] [04780] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4784
+03:37:36.376136 [PHY0] [I] [04782] PRACH: 0/2, preamble=27, offset=0.0 us, peak2avg=668.4, max_offset=30.0 us
+03:37:36.382140 [MAC ] [I] [04794] SCHED: Added user rnti=0x47
+03:37:36.382211 [MAC ] [I] [04794] SCHED: Set bearer config lc_id=0, direction=3
+03:37:36.382461 [RRC ] [I] Added new user rnti=0x47
+03:37:36.382497 [MAC ] [I] [04794] RACH:  tti=4781, preamble=27, offset=0, temp_crnti=0x47
+03:37:36.382676 [MAC ] [I] [04791] SCHED: RAR, ra_id=0, rnti=0x47, rarnti_idx=2, start_rb=0, n_rb=3, rar_grant_rba=52, rar_grant_mcs=0
+03:37:36.382782 [PHY0] [I] [04788] PRACH: 1/2, preamble=28, offset=87.7 us, peak2avg=69.9, max_offset=30.0 us
+03:37:36.382833 [PHY1] [I] [04787] PDCCH: DL DCI Format1A rnti=0x2, cce_index=8, L=4, tti_tx_dl=4791
+03:37:36.382862 [PHY1] [I] [04787] PDSCH: rnti=0x2, l_crb= 3, rb_start=0, harq=0, tti_tx_dl=4791, tx_scheme=Diversity, TB0: tbs=7, mcs=0, rv=0
+             0000: 5b 00 00 68 0c 00 47 
+03:37:36.382920 [PHY0] [I] [04788] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=3, snr=-0.7 dB, n_iter=4, crc=KO, dec_time=  86 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.382978 [MAC ] [I] [04796] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=3, tbs=7, bsr=0 (0-7)
+03:37:36.383068 [PHY0] [I] [04788] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4792
+03:37:36.383110 [PHY0] [I] [04788] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4792
+03:37:36.383464 [MAC ] [I] [04797] SCHED: RAR tx rnti=0x47, pid=5, dci=0,0, grant=(2,5), n_rtx=0, tbs=7, bsr=0 (0-7)
+03:37:36.390810 [PHY0] [I] [04796] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=1, snr=0.5 dB, n_iter=4, crc=KO, dec_time= 110 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.390897 [MAC ] [I] [04804] SCHED: UL retx rnti=0x46, pid=4, dci=3,8, grant=(2,5), n_rtx=4, tbs=7, bsr=0 (0-7)
+03:37:36.391010 [PHY0] [I] [04796] PDCCH: UL DCI Format0  rnti=0x46, cce_index=8, L=8, tpc=1, tti_tx_dl=4800
+03:37:36.391046 [PHY0] [I] [04796] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4800
+03:37:36.391110 [PHY1] [I] [04797] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=0.3 dB, n_iter=4, crc=KO, dec_time=  64 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.391165 [MAC ] [I] [04805] SCHED: UL retx rnti=0x47, pid=5, dci=3,0, grant=(2,5), n_rtx=1, tbs=7, bsr=0 (0-7)
+03:37:36.391254 [PHY1] [I] [04797] PDCCH: UL DCI Format0  rnti=0x47, cce_index=0, L=8, tpc=1, tti_tx_dl=4801
+03:37:36.391339 [PHY1] [I] [04797] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4801
+03:37:36.398799 [PHY0] [I] [04802] PRACH: 0/2, preamble=5, offset=0.0 us, peak2avg=315.4, max_offset=30.0 us
+03:37:36.399125 [PHY0] [I] [04804] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=-0.0 dB, n_iter=4, crc=KO, dec_time=  85 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.399233 [MAC ] [I] [04812] SCHED: UL retx rnti=0x46, pid=4, dci=3,8, grant=(2,5), n_rtx=5, tbs=7, bsr=0 (0-7)
+03:37:36.399354 [PHY0] [I] [04804] PDCCH: UL DCI Format0  rnti=0x46, cce_index=8, L=8, tpc=1, tti_tx_dl=4808
+03:37:36.399396 [PHY0] [I] [04804] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4808
+03:37:36.399637 [PHY1] [I] [04805] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=2, snr=0.2 dB, n_iter=4, crc=KO, dec_time= 100 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.399690 [MAC ] [I] [04813] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=2, tbs=7, bsr=0 (0-7)
+03:37:36.399805 [PHY1] [I] [04805] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4809
+03:37:36.399849 [PHY1] [I] [04805] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4809
+03:37:36.405043 [MAC ] [I] [04818] SCHED: Added user rnti=0x48
+03:37:36.405103 [MAC ] [I] [04818] SCHED: Set bearer config lc_id=0, direction=3
+03:37:36.405126 [PHY0] [W] [04810] PRACH thread did not finish processing TTI=4801
+03:37:36.405302 [RRC ] [I] Added new user rnti=0x48
+03:37:36.405327 [MAC ] [I] [04819] RACH:  tti=4801, preamble=5, offset=0, temp_crnti=0x48
+03:37:36.405391 [PHY0] [I] [04810] PRACH: 1/2, preamble=6, offset=87.7 us, peak2avg=337.2, max_offset=30.0 us
+03:37:36.406024 [PHY0] [I] [04812] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=2, snr=-0.3 dB, n_iter=4, crc=KO, dec_time=  89 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.406118 [MAC ] [I] [04820] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=6, tbs=7, bsr=0 (0-7)
+03:37:36.406215 [PHY0] [I] [04812] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4816
+03:37:36.406250 [PHY0] [I] [04812] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4816
+03:37:36.407445 [PHY1] [I] [04813] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=3, snr=-1.9 dB, n_iter=4, crc=KO, dec_time=  82 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.407555 [MAC ] [I] [04821] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=3, tbs=7, bsr=0 (0-7)
+03:37:36.407648 [PHY1] [I] [04813] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4817
+03:37:36.407696 [PHY1] [I] [04813] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4817
+03:37:36.414617 [PHY0] [I] [04820] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=3, snr=0.4 dB, n_iter=4, crc=KO, dec_time=  91 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.414771 [MAC ] [I] [04828] SCHED: UL retx rnti=0x46, pid=4, dci=3,8, grant=(2,5), n_rtx=7, tbs=7, bsr=0 (0-7)
+03:37:36.415033 [PHY0] [I] [04820] PDCCH: UL DCI Format0  rnti=0x46, cce_index=8, L=8, tpc=1, tti_tx_dl=4824
+03:37:36.415074 [PHY0] [I] [04820] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4824
+03:37:36.415250 [PHY1] [I] [04821] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=1, snr=-0.4 dB, n_iter=4, crc=KO, dec_time=  59 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.415321 [MAC ] [I] [04829] SCHED: UL retx rnti=0x47, pid=5, dci=3,0, grant=(2,5), n_rtx=4, tbs=7, bsr=0 (0-7)
+03:37:36.415440 [PHY1] [I] [04821] PDCCH: UL DCI Format0  rnti=0x47, cce_index=0, L=8, tpc=1, tti_tx_dl=4825
+03:37:36.415539 [PHY1] [I] [04821] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4825
+03:37:36.415912 [PHY0] [I] [04820] PRACH: 0/2, preamble=12, offset=0.0 us, peak2avg=500.6, max_offset=30.0 us
+03:37:36.422079 [MAC ] [I] [04835] SCHED: Added user rnti=0x49
+03:37:36.422176 [MAC ] [I] [04835] SCHED: Set bearer config lc_id=0, direction=3
+03:37:36.422298 [PHY0] [I] [04828] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=1, snr=-0.2 dB, n_iter=4, crc=KO, dec_time=  77 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.422380 [MAC ] [I] [04836] SCHED: UL retx rnti=0x46, pid=4, dci=3,8, grant=(2,5), n_rtx=8, tbs=7, bsr=0 (0-7)
+03:37:36.422398 [RRC ] [I] Added new user rnti=0x49
+03:37:36.422430 [MAC ] [I] [04836] RACH:  tti=4821, preamble=12, offset=0, temp_crnti=0x49
+03:37:36.422461 [PHY0] [I] [04828] PDCCH: UL DCI Format0  rnti=0x46, cce_index=8, L=8, tpc=1, tti_tx_dl=4832
+03:37:36.422493 [PHY0] [I] [04828] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4832
+03:37:36.422497 [PHY0] [I] [04828] PRACH: 1/2, preamble=13, offset=87.7 us, peak2avg=179.2, max_offset=30.0 us
+03:37:36.423102 [PHY1] [I] [04829] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=0.1 dB, n_iter=4, crc=KO, dec_time=  74 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.423172 [MAC ] [I] [04833] SCHED: RAR, ra_id=1, rnti=0x49, rarnti_idx=2, start_rb=0, n_rb=3, rar_grant_rba=52, rar_grant_mcs=0
+03:37:36.423238 [MAC ] [I] [04837] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=5, tbs=7, bsr=0 (0-7)
+03:37:36.423324 [PHY1] [I] [04829] PDCCH: DL DCI Format1A rnti=0x2, cce_index=4, L=4, tti_tx_dl=4833
+03:37:36.423364 [PHY1] [I] [04829] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4833
+03:37:36.423394 [PHY1] [I] [04829] PDSCH: rnti=0x2, l_crb= 3, rb_start=0, harq=0, tti_tx_dl=4833, tx_scheme=Diversity, TB0: tbs=7, mcs=0, rv=0
+             0000: 4c 00 00 68 0c 00 49 
+03:37:36.423498 [PHY1] [I] [04829] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4833
+03:37:36.425046 [MAC ] [I] [04839] SCHED: RAR tx rnti=0x49, pid=7, dci=0,0, grant=(2,5), n_rtx=0, tbs=7, bsr=0 (0-7)
+03:37:36.430119 [PHY0] [I] [04836] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=0.6 dB, n_iter=4, crc=KO, dec_time=  76 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.430235 [MAC ] [I] [04844] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=9, tbs=7, bsr=0 (0-7)
+03:37:36.430345 [PHY0] [I] [04836] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4840
+03:37:36.430374 [PHY0] [I] [04836] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4840
+03:37:36.431425 [PHY1] [I] [04837] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=2, snr=-0.7 dB, n_iter=4, crc=KO, dec_time=  64 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.431488 [MAC ] [I] [04845] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=6, tbs=7, bsr=0 (0-7)
+03:37:36.431562 [PHY1] [I] [04837] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4841
+03:37:36.431590 [PHY1] [I] [04837] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4841
+03:37:36.433624 [PHY1] [I] [04839] PUSCH: rnti=0x49, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=16.0 dB, n_iter=1, crc=OK, dec_time=  92 us
+             0000: 00 58 ad cb d8 33 16 
+03:37:36.433761 [PHY1] [I] [04839] PHICH: rnti=0x49, hi=1, I_lowest=2, n_dmrs=0, tti_tx_dl=4843
+03:37:36.433889 [PDCP] [I] RX SRB0 PDU, do_integrity = false, do_encryption = false
+             0000: 58 ad cb d8 33 16 
+03:37:36.434635 [RRC ] [I] Rx SRB0 PDU
+             0000: 58 ad cb d8 33 16 
+03:37:36.434727 [RRC ] [I] SRB0 - Rx: RRC Connection Request
+             0000: 58 ad cb d8 33 16 
+03:37:36.434754 [RRC ] [I] Allocated SR resources for time-frequency slot (0, 0), N_pucch_sr=0, I_sr=16
+03:37:36.434771 [RRC ] [I] Allocated CQI resources for time-frequency slot (0, 0), n_pucch_2=0, pmi_cfg_idx=37
+03:37:36.434786 [MAC ] [I] [04847] Registering rnti=0x49 to PHY...
+03:37:36.438956 [PHY0] [I] [04844] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=2, snr=1.3 dB, n_iter=4, crc=KO, dec_time= 240 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.439062 [MAC ] [I] [04852] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=10, tbs=7, bsr=0 (0-7)
+03:37:36.439141 [PHY0] [I] [04844] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4848
+03:37:36.439169 [PHY0] [I] [04844] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4848
+03:37:36.439949 [PHY1] [I] [04845] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=3, snr=-0.4 dB, n_iter=4, crc=KO, dec_time=  74 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.440048 [MAC ] [I] [04853] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=7, tbs=7, bsr=0 (0-7)
+03:37:36.440193 [PHY1] [I] [04845] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4849
+03:37:36.440228 [PHY1] [I] [04845] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4849
+03:37:36.448444 [PHY0] [I] [04852] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=3, snr=-0.9 dB, n_iter=4, crc=KO, dec_time=  83 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.448536 [MAC ] [I] [04860] SCHED: UL retx rnti=0x46, pid=4, dci=3,8, grant=(2,5), n_rtx=11, tbs=7, bsr=0 (0-7)
+03:37:36.448742 [PHY1] [I] [04853] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=1, snr=-0.3 dB, n_iter=4, crc=KO, dec_time=  84 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.449250 [MAC ] [I] [04861] SCHED: UL retx rnti=0x47, pid=5, dci=3,0, grant=(2,5), n_rtx=8, tbs=7, bsr=0 (0-7)
+03:37:36.449266 [PHY0] [I] [04852] PDCCH: UL DCI Format0  rnti=0x46, cce_index=8, L=8, tpc=1, tti_tx_dl=4856
+03:37:36.449300 [PHY0] [I] [04852] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4856
+03:37:36.449342 [PHY1] [I] [04853] PDCCH: UL DCI Format0  rnti=0x47, cce_index=0, L=8, tpc=1, tti_tx_dl=4857
+03:37:36.449369 [PHY1] [I] [04853] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4857
+03:37:36.452092 [MAC ] [I] [04866] Done registering rnti=0x49 to PHY...
+03:37:36.452161 [MAC ] [I] [04866] SCHED: Added user rnti=0x49
+03:37:36.452177 [MAC ] [I] [04866] SCHED: Set bearer config lc_id=0, direction=3
+03:37:36.452192 [MAC ] [I] [04866] SCHED: Set bearer config lc_id=1, direction=3
+03:37:36.452263 [RLC ] [W] Adding radio bearer SRB1 with mode AM
+03:37:36.452286 [RLC ] [W] SRB1 configured: t_poll_retx=45, poll_pdu=-1, poll_byte=-1000, max_retx_thresh=4, t_reordering=35, t_status_prohibit=0
+03:37:36.452321 [PDCP] [I] Added bearer SRB1
+03:37:36.452352 [RRC ] [I] SRB0 - rnti=0x49, Sending: RRC Connection Setup
+             0000: 60 12 9b 2e 6a 1e 82 f2 61 4b 48 60 d3 00 00 94 
+             0010: 80 01 08 
+03:37:36.452379 [PDCP] [I] TX SRB0 SDU, SN: 0, do_integrity = false, do_encryption = false
+             0000: 60 12 9b 2e 6a 1e 82 f2 61 4b 48 60 d3 00 00 94 
+             0010: 80 01 08 
+03:37:36.452405 [RLC ] [I] SRB0 Tx SDU
+             0000: 60 12 9b 2e 6a 1e 82 f2 61 4b 48 60 d3 00 00 94 
+             0010: 80 01 08 
+03:37:36.452429 [RLC ] [I] Buffer state: rnti=0x49, lcid=0, tx_queue=19
+03:37:36.453430 [MAC ] [I] [04863] SCHED: Added MAC Contention Resolution CE for rnti=0x49
+03:37:36.453464 [MAC ] [I] [04863] SCHED: DL tx rnti=0x49, pid=0, mask=0x1fc0, dci=3,8, n_rtx=0, tbs=47, buffer=19/0, tb_en={y,n}
+03:37:36.453484 [MAC ] [I] [04863] CE:    Added Contention Resolution ID=0x58adcbd83316
+03:37:36.453505 [RLC ] [I] TX SRB0, Transparent Mode PDU
+             0000: 60 12 9b 2e 6a 1e 82 f2 61 4b 48 60 d3 00 00 94 
+             0010: 80 01 08 
+03:37:36.453595 [PHY1] [I] [04859] PDCCH: DL DCI Format1  rnti=0x49, cce_index=8, L=8, tti_tx_dl=4863
+03:37:36.453619 [PHY1] [I] [04859] PDSCH: rnti=0x49, l_crb=14, mask=0x1fc0, harq=0, tti_tx_dl=4863, tx_scheme=Diversity, TB0: tbs=47, mcs=0, rv=0
+             0000: 3c 20 13 1f 58 ad cb d8 33 16 60 12 9b 2e 6a 1e 
+             0010: 82 f2 61 4b 48 60 d3 00 00 94 80 01 08 00 00 00 
+03:37:36.454153 [PHY0] [I] [04860] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=1, snr=-0.2 dB, n_iter=4, crc=KO, dec_time=  76 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.454228 [MAC ] [I] [04868] SCHED: UL retx rnti=0x46, pid=4, dci=3,8, grant=(2,5), n_rtx=12, tbs=7, bsr=0 (0-7)
+03:37:36.454316 [PHY0] [I] [04860] PDCCH: UL DCI Format0  rnti=0x46, cce_index=8, L=8, tpc=1, tti_tx_dl=4864
+03:37:36.454348 [PHY0] [I] [04860] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4864
+03:37:36.455545 [PHY1] [I] [04861] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=-0.4 dB, n_iter=4, crc=KO, dec_time=  83 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.455649 [PHY1] [I] [04861] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:36.455694 [MAC ] [I] [04869] SCHED: UL retx rnti=0x47, pid=5, dci=3,0, grant=(2,5), n_rtx=9, tbs=7, bsr=0 (0-7)
+03:37:36.455782 [PHY1] [I] [04861] PDCCH: UL DCI Format0  rnti=0x47, cce_index=0, L=8, tpc=1, tti_tx_dl=4865
+03:37:36.455867 [PHY1] [I] [04861] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4865
+03:37:36.461286 [PHY1] [I] [04867] PUCCH: rnti=0x49, corr=0.03, n_pucch=20, n_prb=1, ack=0
+03:37:36.461384 [MAC ] [I] [04871] SCHED: DL retx rnti=0x49, pid=0, mask=0x1fc0, dci=3,0, n_rtx=1, tbs=47, buffer=0/0, tb_en={y,n}
+03:37:36.461495 [PHY1] [I] [04867] PDCCH: DL DCI Format1  rnti=0x49, cce_index=0, L=8, tti_tx_dl=4871
+03:37:36.461550 [PHY1] [I] [04867] PDSCH: rnti=0x49, l_crb=14, mask=0x1fc0, harq=0, tti_tx_dl=4871, tx_scheme=Diversity, TB0: tbs=47, mcs=0, rv=2
+             0000: 00 
+03:37:36.461983 [PHY0] [I] [04868] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=0.3 dB, n_iter=4, crc=KO, dec_time=  89 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.462051 [MAC ] [I] [04876] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=13, tbs=7, bsr=0 (0-7)
+03:37:36.462134 [PHY0] [I] [04868] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4872
+03:37:36.462172 [PHY0] [I] [04868] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4872
+03:37:36.463294 [PHY1] [I] [04869] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=2, snr=-0.5 dB, n_iter=4, crc=KO, dec_time=  60 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.463347 [MAC ] [I] [04877] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=10, tbs=7, bsr=0 (0-7)
+03:37:36.463417 [PHY1] [I] [04869] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4873
+03:37:36.463444 [PHY1] [I] [04869] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4873
+03:37:36.469335 [PHY1] [I] [04875] PUCCH: rnti=0x49, corr=0.98, n_pucch=12, n_prb=23, ack=1
+03:37:36.470456 [PHY0] [I] [04876] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=2, snr=-0.5 dB, n_iter=4, crc=KO, dec_time=  95 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.470541 [MAC ] [I] [04884] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=14, tbs=7, bsr=0 (0-7)
+03:37:36.470656 [PHY0] [I] [04876] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4880
+03:37:36.470686 [PHY0] [I] [04876] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4880
+03:37:36.471161 [PHY1] [I] [04877] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=3, snr=0.0 dB, n_iter=4, crc=KO, dec_time=  90 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.471217 [MAC ] [I] [04885] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=11, tbs=7, bsr=0 (0-7)
+03:37:36.471293 [PHY1] [I] [04877] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4881
+03:37:36.471324 [PHY1] [I] [04877] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4881
+03:37:36.474091 [PHY0] [I] [04880] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=24, cqi=10
+03:37:36.475446 [PHY1] [I] [04881] PUCCH: rnti=0x49, corr=0.98, n_pucch=0, n_prb=23, sr=yes
+03:37:36.475582 [MAC ] [I] [04889] SCHED: UL tx rnti=0x49, pid=1, dci=1,6, grant=(0,25), n_rtx=0, tbs=85, bsr=0 (512-85)
+03:37:36.475680 [PHY1] [I] [04881] PDCCH: UL DCI Format0  rnti=0x49, cce_index=6, L=2, tpc=1, tti_tx_dl=4885
+03:37:36.478266 [PHY0] [I] [04884] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=3, snr=-0.3 dB, n_iter=4, crc=KO, dec_time= 104 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.478350 [MAC ] [I] [04892] SCHED: UL retx rnti=0x46, pid=4, dci=3,0, grant=(2,5), n_rtx=15, tbs=7, bsr=0 (0-7)
+03:37:36.478452 [PHY0] [I] [04884] PDCCH: UL DCI Format0  rnti=0x46, cce_index=0, L=8, tpc=1, tti_tx_dl=4888
+03:37:36.478492 [PHY0] [I] [04884] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4888
+03:37:36.478991 [PHY1] [I] [04885] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=1, snr=-0.2 dB, n_iter=4, crc=KO, dec_time=  67 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.479059 [MAC ] [I] [04893] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=12, tbs=7, bsr=0 (0-7)
+03:37:36.479150 [PHY1] [I] [04885] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4889
+03:37:36.479181 [PHY1] [I] [04885] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4889
+03:37:36.483414 [PHY1] [I] [04889] PUSCH: rnti=0x49, prb=(0,0), tbs=25, mcs=85, idx=0, rv=0, snr=20.2 dB, n_iter=1, crc=OK, dec_time= 253 us
+             0000: 3a 3d 21 48 1f 24 00 a0 00 00 20 30 00 01 1a 3a 
+             0010: 17 2f 34 79 ae 13 07 41 02 0b f6 42 f4 99 00 01 
+03:37:36.483578 [PHY1] [I] [04889] PHICH: rnti=0x49, hi=1, I_lowest=0, n_dmrs=0, tti_tx_dl=4893
+03:37:36.483611 [RLC ] [I] SRB1 Rx data PDU SN: 0 (70 B), Start and end aligned
+             0000: 00 20 30 00 01 1a 3a 17 2f 34 79 ae 13 07 41 02 
+             0010: 0b f6 42 f4 99 00 01 1a 56 45 0a 1d 02 f0 70 00 
+03:37:36.483703 [RLC ] [I] SRB1 Status packet requested through polling bit
+03:37:36.483723 [RLC ] [I] SRB1 Rx SDU (70 B)
+             0000: 00 20 30 00 01 1a 3a 17 2f 34 79 ae 13 07 41 02 
+             0010: 0b f6 42 f4 99 00 01 1a 56 45 0a 1d 02 f0 70 00 
+03:37:36.483754 [PDCP] [I] RX SRB1 PDU, do_integrity = false, do_encryption = false
+             0000: 00 20 30 00 01 1a 3a 17 2f 34 79 ae 13 07 41 02 
+             0010: 0b f6 42 f4 99 00 01 1a 56 45 0a 1d 02 f0 70 00 
+03:37:36.483782 [PDCP] [I] RX SRB1 PDU SN: 0
+             0000: 20 30 00 01 1a 3a 17 2f 34 79 ae 13 07 41 02 0b 
+             0010: f6 42 f4 99 00 01 1a 56 45 0a 1d 02 f0 70 00 05 
+03:37:36.483855 [RRC ] [I] Rx SRB1 PDU
+             0000: 20 30 00 01 1a 3a 17 2f 34 79 ae 13 07 41 02 0b 
+             0010: f6 42 f4 99 00 01 1a 56 45 0a 1d 02 f0 70 00 05 
+03:37:36.483871 [MAC ] [I] [04897] CE:    Received PHR from rnti=0x49, value=13
+03:37:36.483902 [MAC ] [I] [04897] CE:    Received Short BSR rnti=0x49, lcg=0, value=0
+03:37:36.483947 [RRC ] [I] SRB1 - Rx RRC Connection Setup Complete
+             0000: 20 30 00 01 1a 3a 17 2f 34 79 ae 13 07 41 02 0b 
+             0010: f6 42 f4 99 00 01 1a 56 45 0a 1d 02 f0 70 00 05 
+03:37:36.483976 [RRC ] [I] RRCConnectionSetupComplete transaction ID: 0
+03:37:36.484027 [S1AP] [I] Sending InitialUEMessage for RNTI:0x49
+             0000: 00 0c 40 63 00 00 05 00 08 00 02 00 01 00 1a 00 
+             0010: 3b 3a 17 2f 34 79 ae 13 07 41 02 0b f6 42 f4 99 
+03:37:36.484671 [MAC ] [I] [04894] SCHED: DL tx rnti=0x49, pid=0, mask=0x1800, dci=1,12, n_rtx=0, tbs=11, buffer=5/0, tb_en={y,n}
+03:37:36.484759 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 1, N_nack = 0
+03:37:36.484906 [PHY0] [I] [04890] PDCCH: DL DCI Format1  rnti=0x49, cce_index=12, L=2, tti_tx_dl=4894
+03:37:36.484989 [PHY0] [I] [04890] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=0, tti_tx_dl=4894, tx_scheme=Diversity, TB0: tbs=11, mcs=0, rv=0
+             0000: 21 02 1f 00 04 00 00 00 00 00 00 
+03:37:36.485522 [S1AP] [I] Received S1AP PDU
+             0000: 00 0b 40 1d 00 00 03 00 00 00 02 00 21 00 08 00 
+             0010: 02 00 01 00 1a 00 0a 09 22 73 0a e0 b9 0f 02 62 
+03:37:36.485787 [S1AP] [I] Received DownlinkNASTransport
+03:37:36.485870 [RRC ] [I] SRB1 - rnti=0x49, Sending: DL Information Transfer
+             0000: 08 00 49 13 98 57 05 c8 78 13 16 c8 
+03:37:36.485899 [PDCP] [I] TX SRB1 SDU, SN: 0, do_integrity = false, do_encryption = false
+             0000: 08 00 49 13 98 57 05 c8 78 13 16 c8 
+03:37:36.485927 [RLC ] [I] SRB1 Tx SDU (17 B, tx_sdu_queue_len=1)
+             0000: 00 08 00 49 13 98 57 05 c8 78 13 16 c8 00 00 00 
+             0010: 00 
+03:37:36.485957 [RLC ] [I] Buffer state: rnti=0x49, lcid=1, tx_queue=20
+03:37:36.486458 [PHY0] [I] [04892] PUSCH: rnti=0x46, prb=(2,2), tbs=3, mcs=7, idx=0, rv=1, snr=0.8 dB, n_iter=4, crc=KO, dec_time= 102 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.486513 [MAC ] [W] [04892] SCHED: discarting TB 0 pid=4, tti=4892, maximum number of retx exceeded (16)
+03:37:36.486562 [MAC ] [I] [04896] SCHED: DL tx rnti=0x49, pid=1, mask=0x1800, dci=1,12, n_rtx=0, tbs=22, buffer=20/0, tb_en={y,n}
+03:37:36.486601 [RLC ] [I] SRB1 PDU scheduled for tx. SN: 0 (17 B)
+             0000: a0 00 00 08 00 49 13 98 57 05 c8 78 13 16 c8 00 
+             0010: 00 
+03:37:36.486670 [PHY0] [I] [04892] PDCCH: DL DCI Format1  rnti=0x49, cce_index=12, L=2, tti_tx_dl=4896
+03:37:36.486729 [PHY0] [I] [04892] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=1, tti_tx_dl=4896, tx_scheme=Diversity, TB0: tbs=22, mcs=2, rv=0
+             0000: 3f 3f 01 a0 00 00 08 00 49 13 98 57 05 c8 78 13 
+             0010: 16 c8 00 00 00 00 
+03:37:36.486806 [PHY0] [I] [04892] PHICH: rnti=0x46, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4896
+03:37:36.487553 [PHY1] [I] [04893] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=0, snr=-0.5 dB, n_iter=4, crc=KO, dec_time=  59 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.487646 [MAC ] [I] [04901] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=13, tbs=7, bsr=0 (0-7)
+03:37:36.487741 [PHY1] [I] [04893] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4897
+03:37:36.487773 [PHY1] [I] [04893] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4897
+03:37:36.492443 [PHY0] [I] [04898] PUCCH: rnti=0x49, corr=0.98, n_pucch=24, n_prb=1, ack=1
+03:37:36.494573 [PHY0] [I] [04900] PUCCH: rnti=0x49, corr=0.98, n_pucch=24, n_prb=1, ack=1
+03:37:36.495242 [PHY1] [I] [04901] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=2, snr=0.0 dB, n_iter=4, crc=KO, dec_time=  96 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.495337 [PHY1] [I] [04901] PUCCH: rnti=0x49, corr=0.98, n_pucch=0, n_prb=23, sr=yes
+03:37:36.495387 [MAC ] [I] [04909] SCHED: UL tx rnti=0x49, pid=5, dci=1,4, grant=(0,15), n_rtx=0, tbs=533, bsr=0 (512-533)
+03:37:36.495506 [PHY1] [I] [04901] PDCCH: UL DCI Format0  rnti=0x49, cce_index=4, L=2, tpc=1, tti_tx_dl=4905
+03:37:36.495618 [PHY1] [I] [04901] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4905
+03:37:36.502833 [RRC ] [W] User rnti=0x46 expired RRCConnectionSetup deadline: 0:141560>0:136000 us
+03:37:36.502889 [RRC ] [I] User rnti=0x46 timed out. Exists in s1ap=no
+03:37:36.502933 [RRC ] [I] Disconnecting rnti=0x46.
+03:37:36.502980 [PHY1] [E] [04907] Removing user: rnti=0x46 does not exist
+03:37:36.503141 [MAC ] [I] [04916] User rnti=0x46 removed from MAC/PHY
+03:37:36.503607 [PHY1] [I] [04909] PUSCH: rnti=0x49, prb=(0,0), tbs=15, mcs=533, idx=15, rv=0, snr=20.2 dB, n_iter=1, crc=OK, dec_time= 498 us
+             0000: 3d 21 02 21 80 8d 1f 00 00 04 a0 01 01 48 10 10 
+             0010: 44 f5 85 00 6a 42 80 4c 5b 45 00 e0 ce 6e 4e 6c 
+03:37:36.503690 [RLC ] [I] SRB1 Rx control PDU
+             0000: 00 04 
+03:37:36.503708 [MAC ] [I] [04917] SCHED: UL retx rnti=0x47, pid=5, dci=3,8, grant=(2,5), n_rtx=14, tbs=7, bsr=0 (0-7)
+03:37:36.503742 [RLC ] [I] SRB1 Rx Status PDU: ACK_SN = 1, N_nack = 0
+03:37:36.503776 [RLC ] [I] SRB1 Rx data PDU SN: 1 (139 B), Start and end aligned
+             0000: 01 48 10 10 44 f5 85 00 6a 42 80 4c 5b 45 00 e0 
+             0010: ce 6e 4e 6c 2e 0d c4 ed d0 18 44 64 80 20 00 04 
+03:37:36.503794 [PHY1] [I] [04909] PDCCH: UL DCI Format0  rnti=0x47, cce_index=8, L=8, tpc=1, tti_tx_dl=4913
+03:37:36.503827 [PHY1] [I] [04909] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4913
+03:37:36.503819 [RLC ] [I] SRB1 Status packet requested through polling bit
+03:37:36.503900 [PHY1] [I] [04909] PHICH: rnti=0x49, hi=1, I_lowest=0, n_dmrs=0, tti_tx_dl=4913
+03:37:36.503901 [RLC ] [I] SRB1 Rx SDU (139 B)
+             0000: 01 48 10 10 44 f5 85 00 6a 42 80 4c 5b 45 00 e0 
+             0010: ce 6e 4e 6c 2e 0d c4 ed d0 18 44 64 80 20 00 04 
+03:37:36.503957 [PDCP] [I] RX SRB1 PDU, do_integrity = false, do_encryption = false
+             0000: 01 48 10 10 44 f5 85 00 6a 42 80 4c 5b 45 00 e0 
+             0010: ce 6e 4e 6c 2e 0d c4 ed d0 18 44 64 80 20 00 04 
+03:37:36.503995 [PDCP] [I] RX SRB1 PDU SN: 1
+             0000: 48 10 10 44 f5 85 00 6a 42 80 4c 5b 45 00 e0 ce 
+             0010: 6e 4e 6c 2e 0d c4 ed d0 18 44 64 80 20 00 04 82 
+03:37:36.504051 [MAC ] [I] [04917] CE:    Received Short BSR rnti=0x49, lcg=0, value=0
+03:37:36.504092 [RRC ] [I] Rx SRB1 PDU
+             0000: 48 10 10 44 f5 85 00 6a 42 80 4c 5b 45 00 e0 ce 
+             0010: 6e 4e 6c 2e 0d c4 ed d0 18 44 64 80 20 00 04 82 
+03:37:36.504185 [RRC ] [I] SRB1 - Rx UL Information Transfer
+             0000: 48 10 10 44 f5 85 00 6a 42 80 4c 5b 45 00 e0 ce 
+             0010: 6e 4e 6c 2e 0d c4 ed d0 18 44 64 80 20 00 04 82 
+03:37:36.504225 [S1AP] [I] Received RRC SDU
+             0000: 27 ac 28 03 52 14 02 62 da 28 07 06 73 72 73 61 
+             0010: 70 6e 27 6e 80 c2 23 24 01 00 00 24 10 10 a0 1a 
+03:37:36.504385 [S1AP] [I] Sending UplinkNASTransport for RNTI:0x49
+             0000: 00 0d 40 80 ae 00 00 05 00 00 00 02 00 21 00 08 
+             0010: 00 02 00 01 00 1a 00 80 84 80 82 27 ac 28 03 52 
+03:37:36.504407 [MAC ] [I] [04914] SCHED: DL tx rnti=0x49, pid=0, mask=0x1800, dci=1,12, n_rtx=0, tbs=11, buffer=5/0, tb_en={y,n}
+03:37:36.504471 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 2, N_nack = 0
+03:37:36.504549 [PHY0] [I] [04910] PDCCH: DL DCI Format1  rnti=0x49, cce_index=12, L=2, tti_tx_dl=4914
+03:37:36.504582 [PHY0] [I] [04910] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=0, tti_tx_dl=4914, tx_scheme=Diversity, TB0: tbs=11, mcs=0, rv=0
+             0000: 21 02 1f 00 08 00 00 00 00 00 00 
+03:37:36.505918 [S1AP] [I] Received S1AP PDU
+             0000: 00 09 00 80 ac 00 00 06 00 00 00 02 00 21 00 08 
+             0010: 00 02 00 01 00 42 00 0a 18 3b 9a ca 00 60 3b 9a 
+03:37:36.506027 [S1AP] [I] Received InitialContextSetupRequest
+03:37:36.506048 [RRC ] [I] Adding initial context for 0x49
+03:37:36.506068 [RRC ] [I] Key eNodeB (k_enb)
+             0000: b2 a9 b8 26 b4 12 74 bb 5a 48 58 bc 17 00 81 4b 
+             0010: cf 96 e5 93 3a 7c da e9 06 30 a6 0e cf 05 04 26 
+03:37:36.506148 [RRC ] [I] SRB1 - rnti=0x49, Sending: Security Mode Command
+             0000: 30 00 10 
+03:37:36.506171 [PDCP] [I] TX SRB1 SDU, SN: 1, do_integrity = true, do_encryption = true
+             0000: 30 00 10 
+03:37:36.506413 [PDCP] [I] TX SRB1 SDU (encrypted)
+             0000: 01 30 00 10 0b 95 3a f9 
+03:37:36.506436 [RLC ] [I] SRB1 Tx SDU (8 B, tx_sdu_queue_len=1)
+             0000: 01 30 00 10 0b 95 3a f9 
+03:37:36.506459 [RLC ] [I] Buffer state: rnti=0x49, lcid=1, tx_queue=11
+03:37:36.506482 [GTPU] [I] Adding bearer for rnti: 0x49, lcid: 3, addr: 0x7f000164, teid_out: 0xc000000, teid_in: 0x490003
+03:37:36.507041 [MAC ] [I] [04916] SCHED: DL tx rnti=0x49, pid=1, mask=0x1800, dci=1,10, n_rtx=0, tbs=11, buffer=11/0, tb_en={y,n}
+03:37:36.507135 [RLC ] [I] SRB1 PDU scheduled for tx. SN: 1 (8 B)
+             0000: a0 01 01 30 00 10 0b 95 
+03:37:36.507275 [PHY0] [I] [04912] PDCCH: DL DCI Format1  rnti=0x49, cce_index=10, L=2, tti_tx_dl=4916
+03:37:36.507317 [PHY0] [I] [04912] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=1, tti_tx_dl=4916, tx_scheme=Diversity, TB0: tbs=11, mcs=0, rv=0
+             0000: 01 a0 01 01 30 00 10 0b 95 3a f9 
+03:37:36.511660 [PHY1] [I] [04917] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=3, snr=-1.5 dB, n_iter=4, crc=KO, dec_time= 101 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.511765 [MAC ] [I] [04925] SCHED: UL retx rnti=0x47, pid=5, dci=3,0, grant=(2,5), n_rtx=15, tbs=7, bsr=0 (0-7)
+03:37:36.511873 [PHY1] [I] [04917] PDCCH: UL DCI Format0  rnti=0x47, cce_index=0, L=8, tpc=1, tti_tx_dl=4921
+03:37:36.511915 [PHY1] [I] [04917] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4921
+03:37:36.512284 [PHY0] [I] [04918] PUCCH: rnti=0x49, corr=0.98, n_pucch=24, n_prb=1, ack=1
+03:37:36.514367 [PHY0] [I] [04920] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, ack=0, cqi=5
+03:37:36.514459 [MAC ] [I] [04924] SCHED: DL retx rnti=0x49, pid=1, mask=0x1800, dci=3,0, n_rtx=1, tbs=11, buffer=0/0, tb_en={y,n}
+03:37:36.514525 [PHY0] [I] [04920] PDCCH: DL DCI Format1  rnti=0x49, cce_index=0, L=8, tti_tx_dl=4924
+03:37:36.514558 [PHY0] [I] [04920] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=1, tti_tx_dl=4924, tx_scheme=Diversity, TB0: tbs=11, mcs=0, rv=2
+             0000: 00 
+03:37:36.515079 [PHY1] [I] [04921] PUCCH: rnti=0x49, corr=0.98, n_pucch=0, n_prb=23, sr=yes
+03:37:36.515156 [MAC ] [I] [04929] SCHED: UL tx rnti=0x49, pid=1, dci=2,4, grant=(0,15), n_rtx=0, tbs=533, bsr=0 (512-533)
+03:37:36.515244 [PHY1] [I] [04921] PDCCH: UL DCI Format0  rnti=0x49, cce_index=4, L=4, tpc=1, tti_tx_dl=4925
+03:37:36.526555 [PHY1] [I] [04925] PUSCH: rnti=0x47, prb=(2,2), tbs=3, mcs=7, idx=0, rv=1, snr=-1.0 dB, n_iter=4, crc=KO, dec_time=  94 us
+             0000: 00 00 00 00 00 00 00 
+03:37:36.526662 [MAC ] [W] [04925] SCHED: discarting TB 0 pid=5, tti=4925, maximum number of retx exceeded (16)
+03:37:36.526799 [PHY1] [I] [04925] PHICH: rnti=0x47, hi=0, I_lowest=2, n_dmrs=0, tti_tx_dl=4929
+03:37:36.527684 [PHY0] [I] [04928] PUCCH: rnti=0x49, corr=0.98, n_pucch=12, n_prb=23, ack=1
+03:37:36.528526 [PHY1] [I] [04929] PUSCH: rnti=0x49, prb=(0,0), tbs=15, mcs=533, idx=15, rv=0, snr=20.5 dB, n_iter=1, crc=OK, dec_time= 563 us
+             0000: 3d 21 02 21 09 1f 00 00 08 a0 02 02 28 00 aa 53 
+             0010: 23 af 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+03:37:36.528612 [RLC ] [I] SRB1 Rx control PDU
+             0000: 00 08 
+03:37:36.528643 [PHY1] [I] [04929] PHICH: rnti=0x49, hi=1, I_lowest=0, n_dmrs=0, tti_tx_dl=4933
+03:37:36.528656 [RLC ] [I] SRB1 Rx Status PDU: ACK_SN = 2, N_nack = 0
+03:37:36.528684 [RLC ] [I] SRB1 Rx data PDU SN: 2 (7 B), Start and end aligned
+             0000: 02 28 00 aa 53 23 af 
+03:37:36.528711 [RLC ] [I] SRB1 Status packet requested through polling bit
+03:37:36.528729 [RLC ] [I] SRB1 Rx SDU (7 B)
+             0000: 02 28 00 aa 53 23 af 
+03:37:36.528755 [PDCP] [I] RX SRB1 PDU, do_integrity = true, do_encryption = true
+             0000: 02 28 00 aa 53 23 af 
+03:37:36.528777 [PDCP] [I] RX SRB1 PDU (decrypted)
+             0000: 02 28 00 aa 53 23 af 
+03:37:36.529060 [PDCP] [I] MAC match (expected)
+             0000: aa 53 23 af 
+03:37:36.529083 [PDCP] [I] MAC match (found)
+             0000: aa 53 23 af 
+03:37:36.529104 [PDCP] [I] RX SRB1 PDU SN: 2
+             0000: 28 00 
+03:37:36.529143 [MAC ] [I] [04939] CE:    Received Short BSR rnti=0x49, lcg=0, value=0
+03:37:36.529153 [RRC ] [I] Rx SRB1 PDU
+             0000: 28 00 
+03:37:36.529272 [RRC ] [I] SRB1 - Rx Security Mode Complete
+             0000: 28 00 
+03:37:36.529295 [RRC ] [I] SecurityModeComplete transaction ID: 0
+03:37:36.529320 [MAC ] [I] [04936] SCHED: DL tx rnti=0x49, pid=0, mask=0x1800, dci=3,0, n_rtx=0, tbs=11, buffer=5/0, tb_en={y,n}
+03:37:36.529374 [S1AP] [I] Sending InitialContextSetupResponse for RNTI:0x49
+             0000: 20 09 00 22 00 00 03 00 00 40 02 00 21 00 08 40 
+             0010: 02 00 01 00 33 40 0f 00 00 32 40 0a 0a 1f 7f 00 
+03:37:36.529440 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 3, N_nack = 0
+03:37:36.529517 [PHY0] [I] [04932] PDCCH: DL DCI Format1  rnti=0x49, cce_index=0, L=8, tti_tx_dl=4936
+03:37:36.529546 [PHY0] [I] [04932] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=0, tti_tx_dl=4936, tx_scheme=Diversity, TB0: tbs=11, mcs=0, rv=0
+             0000: 21 02 1f 00 0c 00 00 00 00 00 00 
+03:37:36.529861 [MAC ] [I] [00000] SCHED: Set bearer config lc_id=2, direction=3
+03:37:36.529991 [MAC ] [I] [00000] SCHED: Set bearer config lc_id=3, direction=3
+03:37:36.530048 [RLC ] [W] Adding radio bearer SRB2 with mode AM
+03:37:36.530072 [RLC ] [W] SRB2 configured: t_poll_retx=45, poll_pdu=-1, poll_byte=-1000, max_retx_thresh=4, t_reordering=35, t_status_prohibit=0
+03:37:36.530090 [PDCP] [I] Added bearer SRB2
+03:37:36.530106 [RLC ] [W] Adding radio bearer DRB1 with mode UM BI
+03:37:36.530123 [RLC ] [W] DRB1 configured in UM BI mode: t_reordering=80 ms, rx_sn_field_length=10 bits, tx_sn_field_length=10 bits
+03:37:36.530138 [PDCP] [I] Added bearer DRB1
+03:37:36.530162 [RRC ] [I] SRB1 - rnti=0x49, Sending: RRC Connection Reconfiguration
+             0000: 20 06 02 51 39 fc 49 1a 70 80 3a 10 11 f0 30 02 
+             0010: 17 a4 c8 00 38 00 ea 93 16 08 08 48 38 33 9b 93 
+03:37:36.530192 [PDCP] [I] TX SRB1 SDU, SN: 2, do_integrity = true, do_encryption = true
+             0000: 20 06 02 51 39 fc 49 1a 70 80 3a 10 11 f0 30 02 
+             0010: 17 a4 c8 00 38 00 ea 93 16 08 08 48 38 33 9b 93 
+03:37:36.530473 [PDCP] [I] TX SRB1 SDU (encrypted)
+             0000: 02 20 06 02 51 39 fc 49 1a 70 80 3a 10 11 f0 30 
+             0010: 02 17 a4 c8 00 38 00 ea 93 16 08 08 48 38 33 9b 
+03:37:36.530511 [RLC ] [I] SRB1 Tx SDU (98 B, tx_sdu_queue_len=1)
+             0000: 02 20 06 02 51 39 fc 49 1a 70 80 3a 10 11 f0 30 
+             0010: 02 17 a4 c8 00 38 00 ea 93 16 08 08 48 38 33 9b 
+03:37:36.530541 [RLC ] [I] Buffer state: rnti=0x49, lcid=1, tx_queue=101
+03:37:36.531103 [MAC ] [I] [04938] SCHED: DL tx rnti=0x49, pid=1, mask=0x1ff0, dci=3,0, n_rtx=0, tbs=129, buffer=101/0, tb_en={y,n}
+03:37:36.531146 [RLC ] [I] SRB1 PDU scheduled for tx. SN: 2 (98 B)
+             0000: a0 02 02 20 06 02 51 39 fc 49 1a 70 80 3a 10 11 
+             0010: f0 30 02 17 a4 c8 00 38 00 ea 93 16 08 08 48 38 
+03:37:36.531257 [PHY0] [I] [04934] PDCCH: DL DCI Format1  rnti=0x49, cce_index=0, L=8, tti_tx_dl=4938
+03:37:36.531286 [PHY0] [I] [04934] PDSCH: rnti=0x49, l_crb=18, mask=0x1ff0, harq=1, tti_tx_dl=4938, tx_scheme=Diversity, TB0: tbs=129, mcs=3, rv=0
+             0000: 21 64 1f a0 02 02 20 06 02 51 39 fc 49 1a 70 80 
+             0010: 3a 10 11 f0 30 02 17 a4 c8 00 38 00 ea 93 16 08 
+03:37:36.534149 [PHY0] [I] [04940] PUCCH: rnti=0x49, corr=0.03, n_pucch=12, n_prb=23, ack=1
+03:37:36.534216 [MAC ] [I] [04944] SCHED: DL retx rnti=0x49, pid=0, mask=0x1800, dci=3,8, n_rtx=1, tbs=11, buffer=0/0, tb_en={y,n}
+03:37:36.534278 [PHY0] [I] [04940] PDCCH: DL DCI Format1  rnti=0x49, cce_index=8, L=8, tti_tx_dl=4944
+03:37:36.534309 [PHY0] [I] [04940] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=0, tti_tx_dl=4944, tx_scheme=Diversity, TB0: tbs=11, mcs=0, rv=2
+             0000: 00 
+03:37:36.535623 [PHY1] [I] [04941] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:36.536506 [PHY0] [I] [04942] PUCCH: rnti=0x49, corr=0.16, n_pucch=12, n_prb=23, ack=1
+03:37:36.541948 [PHY0] [I] [04948] PUCCH: rnti=0x49, corr=0.98, n_pucch=20, n_prb=1, ack=1
+03:37:36.553303 [RRC ] [I] Removed user rnti=0x46
+03:37:36.554044 [PHY0] [I] [04960] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=1
+03:37:36.555400 [PHY1] [I] [04961] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:36.563430 [RRC ] [W] User rnti=0x47 expired RRCConnectionSetup deadline: 0:181109>0:136000 us
+03:37:36.563483 [RRC ] [I] User rnti=0x47 timed out. Exists in s1ap=no
+03:37:36.563541 [RRC ] [I] Disconnecting rnti=0x47.
+03:37:36.563590 [PHY0] [E] [04968] Removing user: rnti=0x47 does not exist
+03:37:36.563719 [MAC ] [I] [04977] User rnti=0x47 removed from MAC/PHY
+03:37:36.575297 [PHY1] [I] [04981] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:36.594470 [PHY0] [I] [05000] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:36.595192 [PHY1] [I] [05001] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:36.613886 [RRC ] [I] Removed user rnti=0x47
+03:37:36.614992 [PHY1] [I] [05021] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:36.624025 [RRC ] [W] User rnti=0x48 expired RRCConnectionSetup deadline: 0:218846>0:136000 us
+03:37:36.624091 [RRC ] [I] User rnti=0x48 timed out. Exists in s1ap=no
+03:37:36.624143 [RRC ] [I] Disconnecting rnti=0x48.
+03:37:36.624367 [PHY0] [E] [05030] Removing user: rnti=0x48 does not exist
+03:37:36.624430 [PHY1] [E] [05029] Removing user: rnti=0x48 does not exist
+03:37:36.624624 [MAC ] [I] [05038] User rnti=0x48 removed from MAC/PHY
+03:37:36.634079 [PHY0] [I] [05040] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:36.635437 [PHY1] [I] [05041] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:36.655347 [PHY1] [I] [05061] PUCCH: rnti=0x49, corr=-0.01, n_pucch=0, n_prb=23, sr=no
+03:37:36.674411 [PHY0] [I] [05080] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:36.674776 [RRC ] [I] Removed user rnti=0x48
+03:37:36.675187 [PHY1] [I] [05081] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:36.694998 [PHY1] [I] [05101] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:36.714207 [PHY0] [I] [05120] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:36.715531 [PHY1] [I] [05121] PUCCH: rnti=0x49, corr=-0.01, n_pucch=0, n_prb=23, sr=no
+03:37:36.735370 [PHY1] [I] [05141] PUCCH: rnti=0x49, corr=0.10, n_pucch=0, n_prb=23, sr=no
+03:37:36.754582 [PHY0] [I] [05160] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:36.755203 [PHY1] [I] [05161] PUCCH: rnti=0x49, corr=-0.00, n_pucch=0, n_prb=23, sr=no
+03:37:36.775101 [PHY1] [I] [05181] PUCCH: rnti=0x49, corr=0.08, n_pucch=0, n_prb=23, sr=no
+03:37:36.794249 [PHY0] [I] [05200] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:36.796031 [PHY1] [I] [05201] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:36.815495 [PHY1] [I] [05221] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:36.834616 [PHY0] [I] [05240] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:36.835194 [PHY1] [I] [05241] PUCCH: rnti=0x49, corr=-0.02, n_pucch=0, n_prb=23, sr=no
+03:37:36.855078 [PHY1] [I] [05261] PUCCH: rnti=0x49, corr=0.15, n_pucch=0, n_prb=23, sr=no
+03:37:36.874236 [PHY0] [I] [05280] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:36.875561 [PHY1] [I] [05281] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:36.895449 [PHY1] [I] [05301] PUCCH: rnti=0x49, corr=-0.00, n_pucch=0, n_prb=23, sr=no
+03:37:36.914642 [PHY0] [I] [05320] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:36.915308 [PHY1] [I] [05321] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:36.935206 [PHY1] [I] [05341] PUCCH: rnti=0x49, corr=-0.06, n_pucch=0, n_prb=23, sr=no
+03:37:36.954237 [PHY0] [I] [05360] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:36.954954 [PHY1] [I] [05361] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:36.975518 [PHY1] [I] [05381] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:36.994859 [PHY0] [I] [05400] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:36.995505 [PHY1] [I] [05401] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:37.015207 [PHY1] [I] [05421] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:37.034286 [PHY0] [I] [05440] PUCCH: rnti=0x49, corr=1.01, n_pucch=0, n_prb=24, cqi=15
+03:37:37.034985 [PHY1] [I] [05441] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:37.055603 [PHY1] [I] [05461] PUCCH: rnti=0x49, corr=-0.02, n_pucch=0, n_prb=23, sr=no
+03:37:37.073987 [PHY0] [I] [05480] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.076267 [PHY1] [I] [05481] PUCCH: rnti=0x49, corr=-0.02, n_pucch=0, n_prb=23, sr=no
+03:37:37.095234 [PHY1] [I] [05501] PUCCH: rnti=0x49, corr=-0.01, n_pucch=0, n_prb=23, sr=no
+03:37:37.114341 [PHY0] [I] [05520] PUCCH: rnti=0x49, corr=0.98, n_pucch=0, n_prb=24, cqi=15
+03:37:37.115122 [PHY1] [I] [05521] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:37.135586 [PHY1] [I] [05541] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:37.154019 [PHY0] [I] [05560] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.155457 [PHY1] [I] [05561] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:37.175566 [PHY1] [I] [05581] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:37.194422 [PHY0] [I] [05600] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.195164 [PHY1] [I] [05601] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:37.216689 [PHY1] [I] [05621] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:37.233983 [PHY0] [I] [05640] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=13
+03:37:37.235387 [PHY1] [I] [05641] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:37.255285 [PHY1] [I] [05661] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:37.274434 [PHY0] [I] [05680] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.275185 [PHY1] [I] [05681] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:37.294999 [PHY1] [I] [05701] PUCCH: rnti=0x49, corr=0.15, n_pucch=0, n_prb=23, sr=no
+03:37:37.314077 [PHY0] [I] [05720] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.315443 [PHY1] [I] [05721] PUCCH: rnti=0x49, corr=0.08, n_pucch=0, n_prb=23, sr=no
+03:37:37.335434 [PHY1] [I] [05741] PUCCH: rnti=0x49, corr=-0.06, n_pucch=0, n_prb=23, sr=no
+03:37:37.354478 [PHY0] [I] [05760] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.355247 [PHY1] [I] [05761] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:37.375031 [PHY1] [I] [05781] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:37.394106 [PHY0] [I] [05800] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.395500 [PHY1] [I] [05801] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:37.415456 [PHY1] [I] [05821] PUCCH: rnti=0x49, corr=-0.05, n_pucch=0, n_prb=23, sr=no
+03:37:37.434581 [PHY0] [I] [05840] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.435202 [PHY1] [I] [05841] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:37.455035 [PHY1] [I] [05861] PUCCH: rnti=0x49, corr=0.08, n_pucch=0, n_prb=23, sr=no
+03:37:37.474243 [PHY0] [I] [05880] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.475605 [PHY1] [I] [05881] PUCCH: rnti=0x49, corr=-0.01, n_pucch=0, n_prb=23, sr=no
+03:37:37.495334 [PHY1] [I] [05901] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:37.514467 [PHY0] [I] [05920] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=6
+03:37:37.515154 [PHY1] [I] [05921] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:37.535154 [PHY1] [I] [05941] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:37.554151 [PHY0] [I] [05960] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.555551 [PHY1] [I] [05961] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:37.575440 [PHY1] [I] [05981] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:37.594597 [PHY0] [I] [06000] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.595372 [PHY1] [I] [06001] PUCCH: rnti=0x49, corr=-0.10, n_pucch=0, n_prb=23, sr=no
+03:37:37.615295 [PHY1] [I] [06021] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:37.634330 [PHY0] [I] [06040] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.634944 [PHY1] [I] [06041] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:37.655441 [PHY1] [I] [06061] PUCCH: rnti=0x49, corr=0.10, n_pucch=0, n_prb=23, sr=no
+03:37:37.674777 [PHY0] [I] [06080] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.675337 [PHY1] [I] [06081] PUCCH: rnti=0x49, corr=0.08, n_pucch=0, n_prb=23, sr=no
+03:37:37.695164 [PHY1] [I] [06101] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:37.714300 [PHY0] [I] [06120] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.714993 [PHY1] [I] [06121] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:37.735657 [PHY1] [I] [06141] PUCCH: rnti=0x49, corr=-0.09, n_pucch=0, n_prb=23, sr=no
+03:37:37.753951 [PHY0] [I] [06160] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.755316 [PHY1] [I] [06161] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:37.775253 [PHY1] [I] [06181] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:37.794326 [PHY0] [I] [06200] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.795072 [PHY1] [I] [06201] PUCCH: rnti=0x49, corr=-0.05, n_pucch=0, n_prb=23, sr=no
+03:37:37.815621 [PHY1] [I] [06221] PUCCH: rnti=0x49, corr=0.00, n_pucch=0, n_prb=23, sr=no
+03:37:37.834034 [PHY0] [I] [06240] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=5
+03:37:37.835432 [PHY1] [I] [06241] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:37.855330 [PHY1] [I] [06261] PUCCH: rnti=0x49, corr=0.14, n_pucch=0, n_prb=23, sr=no
+03:37:37.874403 [PHY0] [I] [06280] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.875096 [PHY1] [I] [06281] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:37.895643 [PHY1] [I] [06301] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:37.914116 [PHY0] [I] [06320] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.915555 [PHY1] [I] [06321] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:37.935321 [PHY1] [I] [06341] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:37.954447 [PHY0] [I] [06360] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:37.955283 [PHY1] [I] [06361] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:37.974965 [PHY1] [I] [06381] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:37.994134 [PHY0] [I] [06400] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:37.995452 [PHY1] [I] [06401] PUCCH: rnti=0x49, corr=0.08, n_pucch=0, n_prb=23, sr=no
+03:37:38.015326 [PHY1] [I] [06421] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:38.034572 [PHY0] [I] [06440] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.035246 [PHY1] [I] [06441] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:38.054992 [PHY1] [I] [06461] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:38.074106 [PHY0] [I] [06480] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:38.075573 [PHY1] [I] [06481] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:38.095322 [PHY1] [I] [06501] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:38.114610 [PHY0] [I] [06520] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.115239 [PHY1] [I] [06521] PUCCH: rnti=0x49, corr=0.00, n_pucch=0, n_prb=23, sr=no
+03:37:38.135328 [PHY1] [I] [06541] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.154159 [PHY0] [I] [06560] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=13
+03:37:38.155527 [PHY1] [I] [06561] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:38.175492 [PHY1] [I] [06581] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:38.194553 [PHY0] [I] [06600] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.195242 [PHY1] [I] [06601] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:38.215097 [PHY1] [I] [06621] PUCCH: rnti=0x49, corr=-0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.234250 [PHY0] [I] [06640] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.235594 [PHY1] [I] [06641] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.255538 [PHY1] [I] [06661] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:38.274522 [PHY0] [I] [06680] PUCCH: rnti=0x49, corr=0.98, n_pucch=0, n_prb=24, cqi=15
+03:37:38.275372 [PHY1] [I] [06681] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:38.295204 [PHY1] [I] [06701] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:38.314271 [PHY0] [I] [06720] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:38.314963 [PHY1] [I] [06721] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:38.335523 [PHY1] [I] [06741] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:38.354805 [PHY0] [I] [06760] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:38.355882 [PHY1] [I] [06761] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:38.375185 [PHY1] [I] [06781] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.394337 [PHY0] [I] [06800] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.395011 [PHY1] [I] [06801] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:38.415443 [PHY1] [I] [06821] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:38.433982 [PHY0] [I] [06840] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:38.435320 [PHY1] [I] [06841] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:38.455345 [PHY1] [I] [06861] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:38.474325 [PHY0] [I] [06880] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.475033 [PHY1] [I] [06881] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:38.495539 [PHY1] [I] [06901] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:38.513992 [PHY0] [I] [06920] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.515320 [PHY1] [I] [06921] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:38.535296 [PHY1] [I] [06941] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:38.554364 [PHY0] [I] [06960] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.555068 [PHY1] [I] [06961] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:38.575670 [PHY1] [I] [06981] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:38.594042 [PHY0] [I] [07000] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.595364 [PHY1] [I] [07001] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:38.615395 [PHY1] [I] [07021] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:38.634433 [PHY0] [I] [07040] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.635198 [PHY1] [I] [07041] PUCCH: rnti=0x49, corr=-0.15, n_pucch=0, n_prb=23, sr=no
+03:37:38.654954 [PHY1] [I] [07061] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.674037 [PHY0] [I] [07080] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.675623 [PHY1] [I] [07081] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:38.695332 [PHY1] [I] [07101] PUCCH: rnti=0x49, corr=0.08, n_pucch=0, n_prb=23, sr=no
+03:37:38.714548 [PHY0] [I] [07120] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.715175 [PHY1] [I] [07121] PUCCH: rnti=0x49, corr=-0.01, n_pucch=0, n_prb=23, sr=no
+03:37:38.735018 [PHY1] [I] [07141] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:38.754131 [PHY0] [I] [07160] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.755443 [PHY1] [I] [07161] PUCCH: rnti=0x49, corr=-0.07, n_pucch=0, n_prb=23, sr=no
+03:37:38.775390 [PHY1] [I] [07181] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:38.794446 [PHY0] [I] [07200] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:38.795224 [PHY1] [I] [07201] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.815033 [PHY1] [I] [07221] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:38.834190 [PHY0] [I] [07240] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.835533 [PHY1] [I] [07241] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.855347 [PHY1] [I] [07261] PUCCH: rnti=0x49, corr=-0.01, n_pucch=0, n_prb=23, sr=no
+03:37:38.874523 [PHY0] [I] [07280] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.875240 [PHY1] [I] [07281] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:38.895111 [PHY1] [I] [07301] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:38.914199 [PHY0] [I] [07320] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.915688 [PHY1] [I] [07321] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:38.935397 [PHY1] [I] [07341] PUCCH: rnti=0x49, corr=-0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.954661 [PHY0] [I] [07360] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:38.955332 [PHY1] [I] [07361] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:38.975116 [PHY1] [I] [07381] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:38.994268 [PHY0] [I] [07400] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:38.994959 [PHY1] [I] [07401] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:39.015579 [PHY1] [I] [07421] PUCCH: rnti=0x49, corr=-0.03, n_pucch=0, n_prb=23, sr=no
+03:37:39.034621 [PHY0] [I] [07440] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.035403 [PHY1] [I] [07441] PUCCH: rnti=0x49, corr=-0.02, n_pucch=0, n_prb=23, sr=no
+03:37:39.055158 [PHY1] [I] [07461] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:39.074285 [PHY0] [I] [07480] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.075094 [PHY1] [I] [07481] PUCCH: rnti=0x49, corr=0.14, n_pucch=0, n_prb=23, sr=no
+03:37:39.095527 [PHY1] [I] [07501] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:39.114016 [PHY0] [I] [07520] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.115453 [PHY1] [I] [07521] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:39.135227 [PHY1] [I] [07541] PUCCH: rnti=0x49, corr=0.10, n_pucch=0, n_prb=23, sr=no
+03:37:39.154287 [PHY0] [I] [07560] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:39.155027 [PHY1] [I] [07561] PUCCH: rnti=0x49, corr=-0.03, n_pucch=0, n_prb=23, sr=no
+03:37:39.175661 [PHY1] [I] [07581] PUCCH: rnti=0x49, corr=-0.13, n_pucch=0, n_prb=23, sr=no
+03:37:39.193998 [PHY0] [I] [07600] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:39.195428 [PHY1] [I] [07601] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:39.215252 [PHY1] [I] [07621] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:39.234357 [PHY0] [I] [07640] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.235074 [PHY1] [I] [07641] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:39.255561 [PHY1] [I] [07661] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:39.274032 [PHY0] [I] [07680] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.275511 [PHY1] [I] [07681] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:39.295291 [PHY1] [I] [07701] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:39.314459 [PHY0] [I] [07720] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:39.315202 [PHY1] [I] [07721] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:39.334991 [PHY1] [I] [07741] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:39.354091 [PHY0] [I] [07760] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.355400 [PHY1] [I] [07761] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:39.375423 [PHY1] [I] [07781] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:39.394461 [PHY0] [I] [07800] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.395177 [PHY1] [I] [07801] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:39.414980 [PHY1] [I] [07821] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:39.434064 [PHY0] [I] [07840] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:39.435469 [PHY1] [I] [07841] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:39.455311 [PHY1] [I] [07861] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:39.474627 [PHY0] [I] [07880] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.475283 [PHY1] [I] [07881] PUCCH: rnti=0x49, corr=0.10, n_pucch=0, n_prb=23, sr=no
+03:37:39.495043 [PHY1] [I] [07901] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:39.514158 [PHY0] [I] [07920] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:39.515543 [PHY1] [I] [07921] PUCCH: rnti=0x49, corr=0.13, n_pucch=0, n_prb=23, sr=no
+03:37:39.535431 [PHY1] [I] [07941] PUCCH: rnti=0x49, corr=-0.02, n_pucch=0, n_prb=23, sr=no
+03:37:39.555391 [PHY0] [I] [07960] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.555580 [PHY1] [I] [07961] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:39.575077 [PHY1] [I] [07981] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:39.594194 [PHY0] [I] [08000] PUCCH: rnti=0x49, corr=1.01, n_pucch=0, n_prb=24, cqi=15
+03:37:39.595552 [PHY1] [I] [08001] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:39.615508 [PHY1] [I] [08021] PUCCH: rnti=0x49, corr=-0.06, n_pucch=0, n_prb=23, sr=no
+03:37:39.634727 [PHY0] [I] [08040] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:39.635368 [PHY1] [I] [08041] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:39.655137 [PHY1] [I] [08061] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:39.674239 [PHY0] [I] [08080] PUCCH: rnti=0x49, corr=0.98, n_pucch=0, n_prb=24, cqi=15
+03:37:39.674963 [PHY1] [I] [08081] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:39.695436 [PHY1] [I] [08101] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:39.714646 [PHY0] [I] [08120] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.715339 [PHY1] [I] [08121] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:39.735093 [PHY1] [I] [08141] PUCCH: rnti=0x49, corr=-0.01, n_pucch=0, n_prb=23, sr=no
+03:37:39.754296 [PHY0] [I] [08160] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.755002 [PHY1] [I] [08161] PUCCH: rnti=0x49, corr=0.10, n_pucch=0, n_prb=23, sr=no
+03:37:39.775529 [PHY1] [I] [08181] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:39.794057 [PHY0] [I] [08200] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.795477 [PHY1] [I] [08201] PUCCH: rnti=0x49, corr=0.00, n_pucch=0, n_prb=23, sr=no
+03:37:39.815249 [PHY1] [I] [08221] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:39.834331 [PHY0] [I] [08240] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.835038 [PHY1] [I] [08241] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:39.855685 [PHY1] [I] [08261] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:39.874007 [PHY0] [I] [08280] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.875493 [PHY1] [I] [08281] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:39.895257 [PHY1] [I] [08301] PUCCH: rnti=0x49, corr=0.11, n_pucch=0, n_prb=23, sr=no
+03:37:39.914380 [PHY0] [I] [08320] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:39.915087 [PHY1] [I] [08321] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:39.935722 [PHY1] [I] [08341] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:39.954052 [PHY0] [I] [08360] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:39.955442 [PHY1] [I] [08361] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:39.975367 [PHY1] [I] [08381] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:39.994510 [PHY0] [I] [08400] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:39.995114 [PHY1] [I] [08401] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:40.014947 [PHY1] [I] [08421] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:40.034116 [PHY0] [I] [08440] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.035576 [PHY1] [I] [08441] PUCCH: rnti=0x49, corr=-0.06, n_pucch=0, n_prb=23, sr=no
+03:37:40.055496 [PHY1] [I] [08461] PUCCH: rnti=0x49, corr=0.08, n_pucch=0, n_prb=23, sr=no
+03:37:40.074480 [PHY0] [I] [08480] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.075156 [PHY1] [I] [08481] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:40.094991 [PHY1] [I] [08501] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:40.114161 [PHY0] [I] [08520] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.115440 [PHY1] [I] [08521] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:40.135363 [PHY1] [I] [08541] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:40.154575 [PHY0] [I] [08560] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:40.155197 [PHY1] [I] [08561] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:40.175033 [PHY1] [I] [08581] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:40.194160 [PHY0] [I] [08600] PUCCH: rnti=0x49, corr=1.00, n_pucch=0, n_prb=24, cqi=15
+03:37:40.195621 [PHY1] [I] [08601] PUCCH: rnti=0x49, corr=0.07, n_pucch=0, n_prb=23, sr=no
+03:37:40.215442 [PHY1] [I] [08621] PUCCH: rnti=0x49, corr=0.10, n_pucch=0, n_prb=23, sr=no
+03:37:40.234635 [PHY0] [I] [08640] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.235238 [PHY1] [I] [08641] PUCCH: rnti=0x49, corr=0.05, n_pucch=0, n_prb=23, sr=no
+03:37:40.255071 [PHY1] [I] [08661] PUCCH: rnti=0x49, corr=0.00, n_pucch=0, n_prb=23, sr=no
+03:37:40.274188 [PHY0] [I] [08680] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.275607 [PHY1] [I] [08681] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:40.295461 [PHY1] [I] [08701] PUCCH: rnti=0x49, corr=0.10, n_pucch=0, n_prb=23, sr=no
+03:37:40.314627 [PHY0] [I] [08720] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.315315 [PHY1] [I] [08721] PUCCH: rnti=0x49, corr=0.12, n_pucch=0, n_prb=23, sr=no
+03:37:40.335113 [PHY1] [I] [08741] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:40.354192 [PHY0] [I] [08760] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.354929 [PHY1] [I] [08761] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=23, sr=no
+03:37:40.375541 [PHY1] [I] [08781] PUCCH: rnti=0x49, corr=-0.15, n_pucch=0, n_prb=23, sr=no
+03:37:40.394772 [PHY0] [I] [08800] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.395334 [PHY1] [I] [08801] PUCCH: rnti=0x49, corr=-0.09, n_pucch=0, n_prb=23, sr=no
+03:37:40.415241 [PHY1] [I] [08821] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:40.434274 [PHY0] [I] [08840] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.435021 [PHY1] [I] [08841] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:40.455618 [PHY1] [I] [08861] PUCCH: rnti=0x49, corr=0.18, n_pucch=0, n_prb=23, sr=no
+03:37:40.473965 [PHY0] [I] [08880] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.475290 [PHY1] [I] [08881] PUCCH: rnti=0x49, corr=0.02, n_pucch=0, n_prb=23, sr=no
+03:37:40.495247 [PHY1] [I] [08901] PUCCH: rnti=0x49, corr=-0.04, n_pucch=0, n_prb=23, sr=no
+03:37:40.514320 [PHY0] [I] [08920] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.515029 [PHY1] [I] [08921] PUCCH: rnti=0x49, corr=0.09, n_pucch=0, n_prb=23, sr=no
+03:37:40.535675 [PHY1] [I] [08941] PUCCH: rnti=0x49, corr=0.06, n_pucch=0, n_prb=23, sr=no
+03:37:40.554009 [PHY0] [I] [08960] PUCCH: rnti=0x49, corr=0.99, n_pucch=0, n_prb=24, cqi=15
+03:37:40.555492 [PHY1] [I] [08961] PUCCH: rnti=0x49, corr=0.98, n_pucch=0, n_prb=23, sr=yes
+03:37:40.555552 [MAC ] [I] [08969] SCHED: UL tx rnti=0x49, pid=1, dci=1,6, grant=(0,15), n_rtx=0, tbs=533, bsr=0 (512-533)
+03:37:40.555660 [PHY1] [I] [08961] PDCCH: UL DCI Format0  rnti=0x49, cce_index=6, L=2, tpc=1, tti_tx_dl=8965
+03:37:40.563652 [PHY1] [I] [08969] PUSCH: rnti=0x49, prb=(0,0), tbs=15, mcs=533, idx=15, rv=0, snr=15.4 dB, n_iter=1, crc=OK, dec_time= 451 us
+             0000: 3a 3d 21 1f 1f 27 00 a0 03 03 48 02 a4 e0 e6 2b 
+             0010: 38 02 a0 e8 a1 61 7e c8 5e 93 20 00 23 4a c8 a1 
+03:37:40.563751 [RLC ] [I] SRB1 Rx data PDU SN: 3 (29 B), Start and end aligned
+             0000: 03 48 02 a4 e0 e6 2b 38 02 a0 e8 a1 61 7e c8 5e 
+             0010: 93 20 00 23 4a c8 a1 43 a0 9e 70 94 fd 
+03:37:40.563792 [PHY1] [I] [08969] PHICH: rnti=0x49, hi=1, I_lowest=0, n_dmrs=0, tti_tx_dl=8973
+03:37:40.563806 [RLC ] [I] SRB1 Status packet requested through polling bit
+03:37:40.563834 [RLC ] [I] SRB1 Rx SDU (29 B)
+             0000: 03 48 02 a4 e0 e6 2b 38 02 a0 e8 a1 61 7e c8 5e 
+             0010: 93 20 00 23 4a c8 a1 43 a0 9e 70 94 fd 
+03:37:40.563867 [PDCP] [I] RX SRB1 PDU, do_integrity = true, do_encryption = true
+             0000: 03 48 02 a4 e0 e6 2b 38 02 a0 e8 a1 61 7e c8 5e 
+             0010: 93 20 00 23 4a c8 a1 43 a0 9e 70 94 fd 
+03:37:40.563895 [PDCP] [I] RX SRB1 PDU (decrypted)
+             0000: 03 48 02 a4 e0 e6 2b 38 02 a0 e8 a1 61 7e c8 5e 
+             0010: 93 20 00 23 4a c8 a1 43 a0 9e 70 94 fd 
+03:37:40.564135 [PDCP] [I] MAC match (expected)
+             0000: 9e 70 94 fd 
+03:37:40.564155 [PDCP] [I] MAC match (found)
+             0000: 9e 70 94 fd 
+03:37:40.564178 [PDCP] [I] RX SRB1 PDU SN: 3
+             0000: 48 02 a4 e0 e6 2b 38 02 a0 e8 a1 61 7e c8 5e 93 
+             0010: 20 00 23 4a c8 a1 43 a0 
+03:37:40.564221 [RRC ] [I] Rx SRB1 PDU
+             0000: 48 02 a4 e0 e6 2b 38 02 a0 e8 a1 61 7e c8 5e 93 
+             0010: 20 00 23 4a c8 a1 43 a0 
+03:37:40.564246 [MAC ] [I] [08977] CE:    Received PHR from rnti=0x49, value=16
+03:37:40.564267 [RRC ] [I] SRB1 - Rx UL Information Transfer
+             0000: 48 02 a4 e0 e6 2b 38 02 a0 e8 a1 61 7e c8 5e 93 
+             0010: 20 00 23 4a c8 a1 43 a0 
+03:37:40.564322 [S1AP] [I] Received RRC SDU
+             0000: 27 07 31 59 c0 15 07 45 0b 0b f6 42 f4 99 00 01 
+             0010: 1a 56 45 0a 1d 
+03:37:40.564322 [MAC ] [I] [08977] CE:    Received Short BSR rnti=0x49, lcg=0, value=0
+03:37:40.564511 [MAC ] [I] [08974] SCHED: DL tx rnti=0x49, pid=0, mask=0x1800, dci=1,12, n_rtx=0, tbs=11, buffer=5/0, tb_en={y,n}
+03:37:40.564363 [S1AP] [I] Sending UplinkNASTransport for RNTI:0x49
+             0000: 00 0d 40 3f 00 00 05 00 00 00 02 00 21 00 08 00 
+             0010: 02 00 01 00 1a 00 16 15 27 07 31 59 c0 15 07 45 
+03:37:40.564552 [RLC ] [I] SRB1 Tx status PDU - ACK_SN = 4, N_nack = 0
+03:37:40.564642 [PHY0] [I] [08970] PDCCH: DL DCI Format1  rnti=0x49, cce_index=12, L=2, tti_tx_dl=8974
+03:37:40.564672 [PHY0] [I] [08970] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=0, tti_tx_dl=8974, tx_scheme=Diversity, TB0: tbs=11, mcs=0, rv=0
+             0000: 21 02 1f 00 10 00 00 00 00 00 00 
+03:37:40.565549 [S1AP] [I] Received S1AP PDU
+             0000: 00 17 00 10 00 00 02 00 63 00 04 00 21 00 01 00 
+             0010: 02 40 01 20 
+03:37:40.565625 [S1AP] [I] Received UEContextReleaseCommand
+03:37:40.565647 [RRC ] [I] Releasing E-RABs for 0x49
+03:37:40.565672 [S1AP] [I] Sending UEContextReleaseComplete for RNTI:0x49
+             0000: 20 17 00 0f 00 00 02 00 00 40 02 00 21 00 08 40 
+             0010: 02 00 01 
+03:37:40.565778 [S1AP] [I] UE context for RNTI:0x49 released
+03:37:40.565796 [RRC ] [I] Received Release Complete rnti=0x49
+03:37:40.565819 [RLC ] [I] Cleared buffer rnti=0x49
+03:37:40.565839 [RRC ] [I] SRB1 - rnti=0x49, Sending: RRC Connection Release
+             0000: 28 02 
+03:37:40.565863 [PDCP] [I] TX SRB1 SDU, SN: 3, do_integrity = true, do_encryption = true
+             0000: 28 02 
+03:37:40.566064 [PDCP] [I] TX SRB1 SDU (encrypted)
+             0000: 03 28 02 86 00 c8 46 
+03:37:40.566085 [RLC ] [I] SRB1 Tx SDU (7 B, tx_sdu_queue_len=1)
+             0000: 03 28 02 86 00 c8 46 
+03:37:40.566104 [RLC ] [I] Buffer state: rnti=0x49, lcid=1, tx_queue=10
+03:37:40.566470 [MAC ] [I] [08976] SCHED: DL tx rnti=0x49, pid=1, mask=0x1800, dci=1,4, n_rtx=0, tbs=11, buffer=10/0, tb_en={y,n}
+03:37:40.566513 [RLC ] [I] SRB1 PDU scheduled for tx. SN: 3 (7 B)
+             0000: a0 03 03 28 02 86 00 
+03:37:40.566585 [PHY0] [I] [08972] PDCCH: DL DCI Format1  rnti=0x49, cce_index=4, L=2, tti_tx_dl=8976
+03:37:40.566615 [PHY0] [I] [08972] PDSCH: rnti=0x49, l_crb= 4, mask=0x1800, harq=1, tti_tx_dl=8976, tx_scheme=Diversity, TB0: tbs=11, mcs=0, rv=0
+             0000: 3f 01 a0 03 03 28 02 86 00 c8 46 
+03:37:40.572458 [PHY0] [I] [08978] PUCCH: rnti=0x49, corr=0.98, n_pucch=24, n_prb=1, ack=1
+03:37:40.574525 [PHY0] [I] [08980] PUCCH: rnti=0x49, corr=0.98, n_pucch=16, n_prb=23, ack=1
+03:37:40.575238 [PHY1] [I] [08981] PUCCH: rnti=0x49, corr=0.03, n_pucch=0, n_prb=23, sr=no
+03:37:40.594663 [PHY0] [I] [09000] PUCCH: rnti=0x49, corr=0.04, n_pucch=0, n_prb=24
+03:37:40.595049 [PHY1] [I] [09001] PUCCH: rnti=0x49, corr=-0.02, n_pucch=0, n_prb=23, sr=no
+03:37:40.615616 [PHY1] [I] [09021] PUCCH: rnti=0x49, corr=-0.05, n_pucch=0, n_prb=23, sr=no
+03:37:40.634031 [PHY0] [I] [09040] PUCCH: rnti=0x49, corr=0.10, n_pucch=0, n_prb=24
+03:37:40.635444 [PHY1] [I] [09041] PUCCH: rnti=0x49, corr=0.01, n_pucch=0, n_prb=23, sr=no
+03:37:40.655374 [PHY1] [I] [09061] PUCCH: rnti=0x49, corr=-0.03, n_pucch=0, n_prb=23, sr=no
+03:37:40.666202 [RRC ] [I] Disconnecting rnti=0x49.
+03:37:40.666535 [MAC ] [I] [09080] User rnti=0x49 removed from MAC/PHY
+03:37:40.716710 [RRC ] [I] Deallocated SR resources for time-frequency slot (0, 0)
+03:37:40.716768 [RRC ] [I] Deallocated CQI resources for time-frequency slot (0, 0)
+03:37:40.716822 [RRC ] [I] Removed user rnti=0x49
